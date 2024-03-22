@@ -3,8 +3,6 @@
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/adilamanmohammed/adilamanmohammed.github.io/tree/main)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://adilamanmohammed.github.io/#home)
-[![Author](https://img.shields.io/badge/Author-Vinod%20Jangid-purple.svg)](https://www.instagram.com/mohammed_adil_aman/)
-<a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
 <img width="100%" alt="Portfolio Screenshot" src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/fd0d70b2-1505-4adf-8b0c-427df58607e3">
 
