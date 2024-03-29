@@ -22,12 +22,17 @@
 
 
 .visitor-badge-container {
-    margin-left: auto; /* This pushes the container to the right */
-    /* Add other styling as needed */
+    position: fixed;
+    top: 10px; /* Adjust as needed to place it vertically where you want */
+    right: 10px; /*used to move 10px to left from right*/
+    width: 70px; /* This can be adjusted or removed based on your preference */
+    height: auto;
+    /* transform: rotate(90deg); */
+    /* This ensures the badge doesn't overflow the viewport width */
+    overflow: hidden;
 }
 
 .visitor-badge-container img {
-    width: 70px; /* Adjust the width as needed */
-    height: auto; /* This will ensure the aspect ratio is maintained */
-    /* Add other styling as needed */
+    width: 100%; /* Makes the image fully occupy the container's width */
+    height: auto; /* Maintains aspect ratio */
 }
