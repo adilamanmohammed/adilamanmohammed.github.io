@@ -1,1629 +1,2047 @@
+/* Label and switch styles for settings and visual mode */
 #labelforsetting, #labelforvisualmode, #switchforvisualmode:checked + #labelforvisualmode {
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-position: center; /* Centers the background image */
 }
+
 #labelforsetting, #labelforsound {
-    height: 40px;
-    background-size: 60%;
+    height: 40px; /* Sets the height of the labels */
+    background-size: 60%; /* Sets the background image size */
 }
+
+/* Preloader and invert filter styles */
 #preloader, .invertapplied, .invertsettinglabel {
-    filter: invert(1);
+    filter: invert(1); /* Inverts colors */
 }
+
+/* Preloader and noscript styles for full width and height */
 #preloader, noscript {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Sets full width */
+    height: 100%; /* Sets full height */
 }
+
+/* Background color for body and noscript */
 body, noscript {
-    background-color: var(--color-dark-mode);
+    background-color: var(--color-dark-mode); /* Dark mode background color */
 }
+
+/* Prevents horizontal overflow */
 .main, body {
     overflow-x: hidden;
 }
+
+/* Font family settings */
 #backtotopbutton article, :root {
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; /* Sets font family */
 }
+
+/* Overflow hidden for specific elements */
 .eye, .image-div, .logo, .navbar, .project-box, .resume-btn, footer {
     overflow: hidden;
 }
+
+/* Text decoration none for links */
 .cta, .github-redirect, .navbar-tabs-ul a {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from links */
 }
+
+/* Fill color for SVG paths */
 #GmailLogo, .sign svg path {
-    fill: white;
+    fill: white; /* Sets fill color to white */
 }
+
+/* Universal box-sizing and reset styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    -webkit-user-select: none;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    -webkit-user-select: none; /* Prevents text selection */
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; /* Removes tap highlight color on mobile */
 }
+
+/* Selection background color */
 ::selection {
-    background-color: transparent;
+    background-color: transparent; /* Makes selection background transparent */
 }
+
+/* Firefox selection background */
 ::-moz-selection {
-    background: 0 0;
+    background: 0 0; /* Makes Firefox selection background transparent */
 }
+
+/* HTML font size and rendering settings */
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    font-size: 62.5%; /* Sets base font size to 62.5% (10px if default is 16px) */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    text-rendering: optimizeLegibility; /* Improves legibility */
+    -webkit-font-smoothing: antialiased; /* Smooths fonts */
 }
+
+/* Root element variables */
 :root {
-    cursor: default;
-    --color-white: #fff;
-    --color-black: #000;
-    --color-dark-mode: #11111b;
-    --color-light-mode: #ece7e1;
-    --color-ddd-color: #ddd;
-    --color-gray: #c4c4c4;
-    --color-purple: #8000ff;
-    --color-light-purple: #cf59e6;
-    --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark: #e2e2e207;
-    --color-shadowDark: rgba(0, 0, 0, 0.137);
-    --static-heading-gradient-blue: #b0f3f1;
-    --static-heading-gradient-pink: #ffcfdf;
-    --tech-stack-box-first-color: #1a1a29;
-    --tech-stack-box-second-color: rgba(27, 27, 40, 0);
-    --tech-stack-box-border-color: #292929;
+    cursor: default; /* Default cursor */
+    --color-white: #fff; /* White color variable */
+    --color-black: #000; /* Black color variable */
+    --color-dark-mode: #11111b; /* Dark mode background color */
+    --color-light-mode: #ece7e1; /* Light mode background color */
+    --color-ddd-color: #ddd; /* Gray color variable */
+    --color-gray: #c4c4c4; /* Gray color variable */
+    --color-purple: #8000ff; /* Purple color variable */
+    --color-light-purple: #cf59e6; /* Light purple color variable */
+    --color-light-blue: #6bc5f8; /* Light blue color variable */
+    --color-navbarBorder-dark: #e2e2e207; /* Navbar border color for dark mode */
+    --color-shadowDark: rgba(0, 0, 0, 0.137); /* Shadow color for dark mode */
+    --static-heading-gradient-blue: #b0f3f1; /* Static heading gradient color blue */
+    --static-heading-gradient-pink: #ffcfdf; /* Static heading gradient color pink */
+    --tech-stack-box-first-color: #1a1a29; /* First color for tech stack box */
+    --tech-stack-box-second-color: rgba(27, 27, 40, 0); /* Second color for tech stack box */
+    --tech-stack-box-border-color: #292929; /* Border color for tech stack box */
 }
+
+/* Font family settings for specific elements */
 #hello-friend, .footer-bottom article, .getintouch-heading article, .language-speak article, .navbar-tabs-ul li, .two-words article {
-    font-family: fira code;
+    font-family: fira code; /* Sets font family */
 }
+
+/* Webkit scrollbar width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 5px; /* Sets scrollbar width */
 }
+
+/* Webkit scrollbar track background */
 ::-webkit-scrollbar-track {
-    background: #0a0a10;
+    background: #0a0a10; /* Sets scrollbar track background */
 }
+
+/* Webkit scrollbar thumb background */
 ::-webkit-scrollbar-thumb {
-    background-color: #8000ff;
+    background-color: #8000ff; /* Sets scrollbar thumb background */
 }
+
+/* Cursor inner styles */
 .cursor-inner {
-    width: 8px;
-    height: 8px;
-    background-color: var(--color-light-blue);
+    width: 8px; /* Sets width */
+    height: 8px; /* Sets height */
+    background-color: var(--color-light-blue); /* Sets background color */
 }
+
+/* Cursor outer styles */
 .cursor-outer {
-    width: 35px;
-    height: 35px;
-    border: 2px solid #fff;
+    width: 35px; /* Sets width */
+    height: 35px; /* Sets height */
+    border: 2px solid #fff; /* Sets border color */
 }
+
+/* Cursor positioning and behavior */
 .cursor-inner, .cursor-outer {
-    position: fixed;
+    position: fixed; /* Fixed position */
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    pointer-events: none;
+    transform: translate(-50%, -50%); /* Centers the cursor */
+    border-radius: 50%; /* Rounds the cursor */
+    z-index: 9999; /* Ensures cursor is on top */
+    pointer-events: none; /* Disables pointer events */
 }
+
+/* Transform origin and transition for setting container */
 .setting-container, .settingactivate {
-    transform-origin: left;
-    transition-duration: .5s;
+    transform-origin: left; /* Sets transform origin */
+    transition-duration: .5s; /* Sets transition duration */
 }
+
+/* Hover effect for inner cursor */
 .cursor-inner.hover {
-    width: 25px;
-    height: 25px;
-    transition: .2s;
-    mix-blend-mode: difference;
+    width: 25px; /* Increases width */
+    height: 25px; /* Increases height */
+    transition: .2s; /* Sets transition duration */
+    mix-blend-mode: difference; /* Changes blend mode */
 }
+
+/* Hover effect for outer cursor */
 .cursor-outer.hover {
-    width: 50px;
-    height: 50px;
-    transition: .2s;
+    width: 50px; /* Increases width */
+    height: 50px; /* Increases height */
+    transition: .2s; /* Sets transition duration */
 }
+
+/* Active tab styles */
 .activeThistab:before, .navbar-tabs-ul li:hover:before {
-    background-color: var(--color-white);
-    height: 10px;
-    width: 10px;
-    left: -20px;
+    background-color: var(--color-white); /* Sets background color */
+    height: 10px; /* Sets height */
+    width: 10px; /* Sets width */
+    left: -20px; /* Positions element */
 }
+
+/* Light mode variable overrides */
 .light-mode {
-    --color-dark-mode: #ece7e1;
-    --color-black: #fff;
-    --color-white: #000;
-    --color-ddd-color: rgb(31, 31, 31);
-    --color-navbarBorder-dark: #d1d6eb;
-    --static-heading-gradient-blue: #0f7878;
-    --static-heading-gradient-pink: #f09bb9;
-    --color-shadowDark: #e2ddd7;
-    --tech-stack-box-first-color: #e7e2db;
-    --tech-stack-box-second-color: #ece7e100;
-    --tech-stack-box-border-color: #dad5cf;
+    --color-dark-mode: #ece7e1; /* Light mode background color */
+    --color-black: #fff; /* Black color */
+    --color-white: #000; /* White color */
+    --color-ddd-color: rgb(31, 31, 31); /* Dark gray color */
+    --color-navbarBorder-dark: #d1d6eb; /* Navbar border color */
+    --static-heading-gradient-blue: #0f7878; /* Static heading gradient color blue */
+    --static-heading-gradient-pink: #f09bb9; /* Static heading gradient color pink */
+    --color-shadowDark: #e2ddd7; /* Shadow color for light mode */
+    --tech-stack-box-first-color: #e7e2db; /* First color for tech stack box */
+    --tech-stack-box-second-color: #ece7e100; /* Second color for tech stack box */
+    --tech-stack-box-border-color: #dad5cf; /* Border color for tech stack box */
 }
+
+/* Setting container styles */
 .setting-container {
-    width: 60px;
-    height: 50px;
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 0;
+    width: 60px; /* Sets width */
+    height: 50px; /* Sets height */
+    margin-left: 50px; /* Sets left margin */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    gap: 30px; /* Sets gap between items */
+    padding: 20px 0; /* Sets vertical padding */
 }
+
+/* Label for setting styles */
 #labelforsetting {
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    background-image: url(src/svg/settings-svgrepo-com.svg);
-    transition-duration: .5s;
-    cursor: pointer;
+    width: 40px; /* Sets width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 0 20px; /* Sets horizontal padding */
+    background-image: url(src/svg/settings-svgrepo-com.svg); /* Sets background image */
+    transition-duration: .5s; /* Sets transition duration */
+    cursor: pointer; /* Changes cursor to pointer */
 }
+
+/* Sound and visual mode toggle button containers */
 .soundtogglebuttoncontainer, .visualmodetogglebuttoncontainer {
-    align-items: center;
-    width: fit-content;
-    transition-duration: .3s;
+    align-items: center; /* Centers items vertically */
+    width: fit-content; /* Sets width to fit content */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Setting activate styles */
 .settingactivate {
-    width: 200px;
+    width: 200px; /* Sets width */
 }
+
+/* Visual mode toggle button container styles */
 .visualmodetogglebuttoncontainer {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    transform: translate(-50px) scale(0);
+    height: fit-content; /* Sets height to fit content */
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    transform: translate(-50px) scale(0); /* Transforms the element */
 }
+
+/* Show visual mode styles */
 .visualmodeshow {
-    transition-duration: .3s;
-    transform: translate(0) scale(1);
+    transition-duration: .3s; /* Sets transition duration */
+    transform: translate(0) scale(1); /* Transforms the element */
 }
+
+/* Hidden elements */
 #switchforsetting, #switchforsound, #switchforvisualmode, .hamburger, .mobiletogglemenu {
-    display: none;
+    display: none; /* Hides the elements */
 }
+
+/* Checked setting switch styles */
 #switchforsetting:checked + #labelforsetting {
-    transform: rotate(180deg);
-    transition-duration: .5s;
+    transform: rotate(180deg); /* Rotates the element */
+    transition-duration: .5s; /* Sets transition duration */
 }
+
+/* Label for visual mode styles */
 #labelforvisualmode {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background-image: url(src/png/crescent-moon (1).png);
-    background-size: 50%;
-    transition-duration: .5s;
-    cursor: pointer;
+    position: relative; /* Relative positioning */
+    width: 40px; /* Sets width */
+    height: 40px; /* Sets height */
+    background-image: url(src/png/crescent-moon (1).png); /* Sets background image */
+    background-size: 50%; /* Sets background image size */
+    transition-duration: .5s; /* Sets transition duration */
+    cursor: pointer; /* Changes cursor to pointer */
 }
+
+/* Checked visual mode switch styles */
 #switchforvisualmode:checked + #labelforvisualmode {
-    transform: rotate(360deg);
-    transition-duration: .5s;
-    background-image: url(src/png/sun.png);
-    background-size: 60%;
+    transform: rotate(360deg); /* Rotates the element */
+    transition-duration: .5s; /* Sets transition duration */
+    background-image: url(src/png/sun.png); /* Sets background image */
+    background-size: 60%; /* Sets background image size */
 }
+
+/* Sound toggle button container styles */
 .soundtogglebuttoncontainer {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    transform: translate(-130px) scale(0);
+    height: fit-content; /* Sets height to fit content */
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    transform: translate(-130px) scale(0); /* Transforms the element */
 }
+
+/* Label for sound and preloader styles */
 #labelforsound, #preloader {
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-position: center; /* Centers the background image */
 }
+
+/* Show sound mode styles */
 .soundmodeshow {
-    transition-delay: .1s;
-    transition-duration: .5s;
-    display: inline-block;
-    transform: translate(0) scale(1);
+    transition-delay: .1s; /* Sets transition delay */
+    transition-duration: .5s; /* Sets transition duration */
+    display: inline-block; /* Displays as inline-block */
+    transform: translate(0) scale(1); /* Transforms the element */
 }
+
+/* Logo hover effect */
 .logo, .logo:hover {
-    transition-duration: 1s;
+    transition-duration: 1s; /* Sets transition duration */
 }
+
+/* Label for sound styles */
 #labelforsound {
-    position: relative;
-    justify-content: center;
-    width: 40px;
-    background-image: url(src/svg/Mute_Icon.svg);
-    cursor: pointer;
-    transition-duration: .5s;
+    position: relative; /* Relative positioning */
+    justify-content: center; /* Centers items horizontally */
+    width: 40px; /* Sets width */
+    background-image: url(src/svg/Mute_Icon.svg); /* Sets background image */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition-duration: .5s; /* Sets transition duration */
 }
+
+/* Checked sound switch styles */
 #switchforsound:checked + #labelforsound {
-    transition-duration: .5s;
-    background-image: url(src/svg/Speaker_Icon.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+    transition-duration: .5s; /* Sets transition duration */
+    background-image: url(src/svg/Speaker_Icon.svg); /* Sets background image */
+    background-size: 50%; /* Sets background image size */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-position: center; /* Centers the background image */
 }
+
+/* Header styles */
 header {
-    width: 100%;
-    height: 115px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    width: 100%; /* Sets full width */
+    height: 115px; /* Sets height */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-end; /* Aligns items to the bottom */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Preloader styles */
 #preloader {
-    background-color: #fff;
-    position: fixed;
-    z-index: 99999;
-    justify-content: center;
-    overflow-y: hidden;
-    background-image: url(src/svg/Pulse-0.4s-200px.svg);
-    background-size: 10%;
+    background-color: #fff; /* Sets background color */
+    position: fixed; /* Fixed positioning */
+    z-index: 99999; /* Ensures preloader is on top */
+    justify-content: center; /* Centers items horizontally */
+    overflow-y: hidden; /* Hides vertical overflow */
+    background-image: url(src/svg/Pulse-0.4s-200px.svg); /* Sets background image */
+    background-size: 10%; /* Sets background image size */
 }
+
+/* Navbar and noscript styles */
 .navbar, noscript {
-    display: flex;
-    align-items: center;
-    position: fixed;
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    position: fixed; /* Fixed positioning */
 }
+
+/* Gradient text for specific elements */
 #name, .getintouch-heading article {
-    background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
-    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple)); /* Sets gradient background */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
 }
+
+/* Noscript styles */
 noscript {
-    justify-content: center;
-    font-size: 4rem;
-    color: #fff;
-    z-index: 999999;
+    justify-content: center; /* Centers items horizontally */
+    font-size: 4rem; /* Sets font size */
+    color: #fff; /* Sets text color */
+    z-index: 999999; /* Ensures noscript is on top */
 }
+
+/* Fake navbar styles */
 .fakenavbar {
-    height: 0;
-    width: 0%;
-    background-color: transparent;
+    height: 0; /* Sets height to 0 */
+    width: 0%; /* Sets width to 0 */
+    background-color: transparent; /* Makes background transparent */
 }
+
+/* Navbar styles */
 .navbar {
-    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-    backdrop-filter: blur(10px);
-    height: 80px;
-    width: 80%;
-    padding: 0 20px;
-    justify-content: space-between;
-    z-index: 999;
-    border: 1px solid var(--color-navbarBorder-dark);
-    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color)); /* Sets gradient background */
+    backdrop-filter: blur(10px); /* Applies blur effect */
+    height: 80px; /* Sets height */
+    width: 80%; /* Sets width */
+    padding: 0 20px; /* Sets horizontal padding */
+    justify-content: space-between; /* Spaces items evenly */
+    z-index: 999; /* Ensures navbar is on top */
+    border: 1px solid var(--color-navbarBorder-dark); /* Sets border color */
+    border-radius: 50px; /* Rounds the corners */
 }
+
+/* Navbar tabs and list styles */
 .navbar-tabs, .navbar-tabs-ul {
-    height: 100%;
-    align-items: center;
+    height: 100%; /* Sets full height */
+    align-items: center; /* Centers items vertically */
 }
+
+/* Flexbox layout for logo and list items */
 .logo, .navbar-tabs-ul li {
-    position: relative;
-    display: flex;
+    position: relative; /* Relative positioning */
+    display: flex; /* Uses flexbox layout */
 }
+
+/* Navbar tabs layout */
 .navbar-tabs {
-    display: flex;
-    width: 80%;
+    display: flex; /* Uses flexbox layout */
+    width: 80%; /* Sets width */
 }
+
+/* Navbar tabs list layout */
 .navbar-tabs-ul {
-    width: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 80px;
-    color: var(--color-white);
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    list-style: none; /* Removes list styling */
+    justify-content: flex-end; /* Aligns items to the right */
+    gap: 80px; /* Sets gap between items */
+    color: var(--color-white); /* Sets text color */
 }
+
+/* Navbar list item styles */
 .navbar-tabs-ul li {
-    width: fit-content;
-    height: 30px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    width: fit-content; /* Sets width to fit content */
+    height: 30px; /* Sets height */
+    text-align: center; /* Centers text */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    font-size: 1.5rem; /* Sets font size */
 }
+
+/* Hover effect for navbar list items */
 .navbar-tabs-ul li:hover:before {
-    content: "";
-    position: absolute;
-    border-radius: 5px;
-    z-index: -1;
+    content: ""; /* Adds content */
+    position: absolute; /* Absolute positioning */
+    border-radius: 5px; /* Rounds the corners */
+    z-index: -1; /* Sends element to back */
 }
+
+/* Navbar link styles */
 .navbar-tabs-ul a {
-    color: var(--color-white);
-    font-weight: 100;
+    color: var(--color-white); /* Sets text color */
+    font-weight: 100; /* Sets font weight */
 }
+
+/* Logo styles */
 .logo {
-    width: 10%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-user-select: none;
+    width: 10%; /* Sets width */
+    height: 100%; /* Sets full height */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spaces items evenly */
+    -webkit-user-select: none; /* Prevents text selection */
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+
+/* Flexbox layout for face and logo top */
 .face, .logo-top {
-    width: 100%;
-    align-items: center;
-    display: flex;
+    width: 100%; /* Sets full width */
+    align-items: center; /* Centers items vertically */
+    display: flex; /* Uses flexbox layout */
 }
+
+/* Hey text styles */
 .hey {
-    color: #fff;
-    position: absolute;
-    font-size: 2.5rem;
-    font-weight: 300;
-    background-color: #20222e;
-    padding: 5px 10px;
-    border-radius: 20px;
-    left: 120px;
-    bottom: 80px;
-    opacity: 0;
+    color: #fff; /* Sets text color */
+    position: absolute; /* Absolute positioning */
+    font-size: 2.5rem; /* Sets font size */
+    font-weight: 300; /* Sets font weight */
+    background-color: #20222e; /* Sets background color */
+    padding: 5px 10px; /* Sets padding */
+    border-radius: 20px; /* Rounds the corners */
+    left: 120px; /* Positions element */
+    bottom: 80px; /* Positions element */
+    opacity: 0; /* Sets opacity */
 }
+
+/* White text color for specific elements */
 #hello-friend, #work, .about-info p, .activeThistab, .language-speak article {
-    color: var(--color-white);
+    color: var(--color-white); /* Sets text color */
 }
+
+/* Border radius for blob, eye, and pupil */
 .blob, .eye, .pupil {
-    border-radius: 50%;
+    border-radius: 50%; /* Rounds the elements */
 }
+
+/* Popup animation */
 .popup {
-    animation: 3s linear pop-up;
+    animation: 3s linear pop-up; /* Sets animation */
 }
+
+/* Popup keyframes */
 @keyframes pop-up {
     from {
-        bottom: -50px;
-        left: 50px;
-        opacity: 1;
+        bottom: -50px; /* Sets starting position */
+        left: 50px; /* Sets starting position */
+        opacity: 1; /* Sets starting opacity */
     }
     to {
-        opacity: 0;
+        opacity: 0; /* Sets ending opacity */
     }
 }
+
+/* Logo top styles */
 .logo-top {
-    height: 100%;
-    justify-content: center;
-    transform-origin: bottom;
-    position: relative;
+    height: 100%; /* Sets full height */
+    justify-content: center; /* Centers items horizontally */
+    transform-origin: bottom; /* Sets transform origin */
+    position: relative; /* Relative positioning */
 }
+
+/* Before content for active tab and face */
 .activeThistab:before, .face {
-    content: "";
-    position: absolute;
+    content: ""; /* Adds content */
+    position: absolute; /* Absolute positioning */
 }
+
+/* Logo image styles */
 .logo-top img {
-    height: 100%;
-    z-index: 2;
+    height: 100%; /* Sets full height */
+    z-index: 2; /* Sets z-index */
 }
+
+/* Face styles */
 .face {
-    height: 74%;
-    bottom: 0;
-    justify-content: center;
-    gap: 5px;
-    z-index: 1;
-    padding-left: 1px;
+    height: 74%; /* Sets height */
+    bottom: 0; /* Positions element */
+    justify-content: center; /* Centers items horizontally */
+    gap: 5px; /* Sets gap between items */
+    z-index: 1; /* Sets z-index */
+    padding-left: 1px; /* Sets left padding */
 }
+
+/* Eye styles */
 .eye {
-    width: 8px;
-    height: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+    width: 8px; /* Sets width */
+    height: 8px; /* Sets height */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #fff; /* Sets background color */
 }
+
+/* Left eye shadow */
 .left-eye {
-    box-shadow: -1px -2px 2px rgba(0, 0, 0, .589) inset;
+    box-shadow: -1px -2px 2px rgba(0, 0, 0, .589) inset; /* Sets inset shadow */
 }
+
+/* Right eye shadow */
 .right-eye {
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, .589) inset;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, .589) inset; /* Sets inset shadow */
 }
+
+/* Pupil styles */
 .pupil {
-    width: 3.5px;
-    height: 3.5px;
-    background: #241010;
+    width: 3.5px; /* Sets width */
+    height: 3.5px; /* Sets height */
+    background: #241010; /* Sets background color */
 }
+
+/* Logo hover effect */
 .logo:hover {
-    transform: translateY(200px);
+    transform: translateY(200px); /* Transforms the element */
 }
+
+/* Active tab before content styles */
 .activeThistab:before {
-    border-radius: 50%;
-    z-index: -1;
+    border-radius: 50%; /* Rounds the element */
+    z-index: -1; /* Sends element to back */
 }
+
+/* DP element after and before content styles */
 .dp::after, .dp::before {
-    height: 265px;
-    z-index: -2;
-    content: "";
+    height: 265px; /* Sets height */
+    z-index: -2; /* Sends element to back */
+    content: ""; /* Adds content */
 }
+
+/* Main element styles */
 .main {
-    width: 100%;
-    height: fit-content;
-    position: relative;
+    width: 100%; /* Sets full width */
+    height: fit-content; /* Sets height to fit content */
+    position: relative; /* Relative positioning */
 }
+
+/* Blob styles */
 .blob {
-    position: absolute;
-    right: -15%;
-    top: 0;
-    background-color: var(--color-light-purple);
-    width: 600px;
-    height: 100vh;
-    filter: blur(300px);
-    opacity: .3;
-    animation: 1s linear infinite alternate-reverse breath;
+    position: absolute; /* Absolute positioning */
+    right: -15%; /* Positions element */
+    top: 0; /* Positions element */
+    background-color: var(--color-light-purple); /* Sets background color */
+    width: 600px; /* Sets width */
+    height: 100vh; /* Sets full height */
+    filter: blur(300px); /* Applies blur effect */
+    opacity: .3; /* Sets opacity */
+    animation: 1s linear infinite alternate-reverse breath; /* Sets animation */
 }
+
+/* Breath keyframes */
 @keyframes breath {
     from {
-        opacity: .3;
+        opacity: .3; /* Sets starting opacity */
     }
     to {
-        opacity: .5;
+        opacity: .5; /* Sets ending opacity */
     }
 }
+
+/* Landing page container styles */
 .landing-page-container {
-    width: 100%;
-    height: calc(100vh - 115px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Sets full width */
+    height: calc(100vh - 115px); /* Sets height */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: row; /* Aligns items in a row */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Text content styles */
 .text-content {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    width: 60%; /* Sets width */
+    height: 100%; /* Sets full height */
+    align-items: flex-start; /* Aligns items to the start */
+    justify-content: center; /* Centers items vertically */
 }
+
+/* Hello friend text styles */
 #hello-friend {
-    font-size: 3.5rem;
-    font-weight: 600;
-    width: fit-content;
-    display: flex;
-    align-items: flex-end;
+    font-size: 3.5rem; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+    width: fit-content; /* Sets width to fit content */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-end; /* Aligns items to the end */
 }
+
+/* Name and work text styles */
 #name, #work {
-    font-size: 8rem;
-    width: fit-content;
+    font-size: 8rem; /* Sets font size */
+    width: fit-content; /* Sets width to fit content */
 }
+
+/* Display and font weight for name, work, and button text */
 #name, #work, .letsTalkBtn-text {
-    display: flex;
-    font-weight: 700;
+    display: flex; /* Uses flexbox layout */
+    font-weight: 700; /* Sets font weight */
 }
+
+/* Vibrate keyframes */
 @-webkit-keyframes vibrate-1 {
     0%, 100% {
-        -webkit-transform: translate(0);
+        -webkit-transform: translate(0); /* No transformation */
         transform: translate(0);
     }
     20% {
-        -webkit-transform: translate(-2px, 2px);
+        -webkit-transform: translate(-2px, 2px); /* Transforms the element */
         transform: translate(-2px, 2px);
     }
     40% {
-        -webkit-transform: translate(-2px, -2px);
+        -webkit-transform: translate(-2px, -2px); /* Transforms the element */
         transform: translate(-2px, -2px);
     }
     60% {
-        -webkit-transform: translate(2px, 2px);
+        -webkit-transform: translate(2px, 2px); /* Transforms the element */
         transform: translate(2px, 2px);
     }
     80% {
-        -webkit-transform: translate(2px, -2px);
+        -webkit-transform: translate(2px, -2px); /* Transforms the element */
         transform: translate(2px, -2px);
     }
 }
+
+/* Keyframes for vibrate animation */
 @keyframes vibrate-1 {
     0%, 100% {
-        -webkit-transform: translate(0);
+        -webkit-transform: translate(0); /* No transformation */
         transform: translate(0);
     }
     20% {
-        -webkit-transform: translate(-2px, 2px);
+        -webkit-transform: translate(-2px, 2px); /* Transforms the element */
         transform: translate(-2px, 2px);
     }
     40% {
-        -webkit-transform: translate(-2px, -2px);
+        -webkit-transform: translate(-2px, -2px); /* Transforms the element */
         transform: translate(-2px, -2px);
     }
     60% {
-        -webkit-transform: translate(2px, 2px);
+        -webkit-transform: translate(2px, 2px); /* Transforms the element */
         transform: translate(2px, 2px);
     }
     80% {
-        -webkit-transform: translate(2px, -2px);
+        -webkit-transform: translate(2px, -2px); /* Transforms the element */
         transform: translate(2px, -2px);
     }
 }
+
+/* Name text styles */
 #name {
-    align-items: flex-start;
-    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: 400% 400%;
-    -webkit-animation: 3s infinite gradient;
-    animation: 3s infinite gradient;
+    align-items: flex-start; /* Aligns items to the start */
+    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple)); /* Sets gradient background */
+    background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text; /* Clips background to text */
+    background-size: 400% 400%; /* Sets background size */
+    -webkit-animation: 3s infinite gradient; /* Sets animation */
+    animation: 3s infinite gradient; /* Sets animation */
 }
+
+/* Gradient keyframes */
 @keyframes gradient {
     0%, 100% {
-        background-position: 0 50%;
+        background-position: 0 50%; /* Sets background position */
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 50%; /* Sets background position */
     }
 }
+
+/* Work text styles */
 #work {
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns items to the start */
+    flex-wrap: wrap; /* Wraps items */
 }
+
+/* Paragraph styles */
 #info-para, .about-info p {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 400; /* Sets font weight */
+    font-size: 2rem; /* Sets font size */
 }
+
+/* Work text container styles */
 #work div {
-    display: flex;
-    margin: 0 12px 0 0;
+    display: flex; /* Uses flexbox layout */
+    margin: 0 12px 0 0; /* Sets margins */
 }
+
+/* Hover effect for jello animation */
 .jello:hover {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #03e6ff;
-    -webkit-animation: .9s both jello-vertical;
-    animation: .9s both jello-vertical;
+    background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text; /* Clips background to text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
+    background-color: #03e6ff; /* Sets background color */
+    -webkit-animation: .9s both jello-vertical; /* Sets animation */
+    animation: .9s both jello-vertical; /* Sets animation */
 }
+
+/* Transparent background for back to top button, dp elements, and button */
 #backtotopbutton, .dp::after, .dp::before, .letsTalkBtn {
-    background-color: transparent;
+    background-color: transparent; /* Sets background color */
 }
+
+/* Keyframes for jello animation */
 @-webkit-keyframes jello-vertical {
     0%, 100% {
-        -webkit-transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1); /* No transformation */
         transform: scale3d(1, 1, 1);
     }
     30% {
-        -webkit-transform: scale3d(.75, 1.25, 1);
+        -webkit-transform: scale3d(.75, 1.25, 1); /* Transforms the element */
         transform: scale3d(.75, 1.25, 1);
     }
     40% {
-        -webkit-transform: scale3d(1.25, .75, 1);
+        -webkit-transform: scale3d(1.25, .75, 1); /* Transforms the element */
         transform: scale3d(1.25, .75, 1);
     }
     50% {
-        -webkit-transform: scale3d(.85, 1.15, 1);
+        -webkit-transform: scale3d(.85, 1.15, 1); /* Transforms the element */
         transform: scale3d(.85, 1.15, 1);
     }
     65% {
-        -webkit-transform: scale3d(1.05, .95, 1);
+        -webkit-transform: scale3d(1.05, .95, 1); /* Transforms the element */
         transform: scale3d(1.05, .95, 1);
     }
     75% {
-        -webkit-transform: scale3d(.95, 1.05, 1);
+        -webkit-transform: scale3d(.95, 1.05, 1); /* Transforms the element */
         transform: scale3d(.95, 1.05, 1);
     }
 }
+
+/* Keyframes for jello animation */
 @keyframes jello-vertical {
     0%, 100% {
-        -webkit-transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1); /* No transformation */
         transform: scale3d(1, 1, 1);
     }
     30% {
-        -webkit-transform: scale3d(.75, 1.25, 1);
+        -webkit-transform: scale3d(.75, 1.25, 1); /* Transforms the element */
         transform: scale3d(.75, 1.25, 1);
     }
     40% {
-        -webkit-transform: scale3d(1.25, .75, 1);
+        -webkit-transform: scale3d(1.25, .75, 1); /* Transforms the element */
         transform: scale3d(1.25, .75, 1);
     }
     50% {
-        -webkit-transform: scale3d(.85, 1.15, 1);
+        -webkit-transform: scale3d(.85, 1.15, 1); /* Transforms the element */
         transform: scale3d(.85, 1.15, 1);
     }
     65% {
-        -webkit-transform: scale3d(1.05, .95, 1);
+        -webkit-transform: scale3d(1.05, .95, 1); /* Transforms the element */
         transform: scale3d(1.05, .95, 1);
     }
     75% {
-        -webkit-transform: scale3d(.95, 1.05, 1);
+        -webkit-transform: scale3d(.95, 1.05, 1); /* Transforms the element */
         transform: scale3d(.95, 1.05, 1);
     }
 }
+
+/* Paragraph styles */
 #info-para {
-    width: 75%;
-    padding-top: 30px;
-    color: var(--color-ddd-color);
-    line-height: 20px;
+    width: 75%; /* Sets width */
+    padding-top: 30px; /* Sets top padding */
+    color: var(--color-ddd-color); /* Sets text color */
+    line-height: 20px; /* Sets line height */
 }
+
+/* Contact button container styles */
 .contact-btn-div {
-    width: 100%;
-    padding-top: 50px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 100%; /* Sets full width */
+    padding-top: 50px; /* Sets top padding */
+    height: fit-content; /* Sets height to fit content */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the start */
 }
+
+/* Let's Talk button styles */
 .letsTalkBtn {
-    position: relative;
-    border: none;
-    width: 180px;
-    height: 40px;
-    border-radius: 0;
-    cursor: pointer;
-    transition: .3s;
+    position: relative; /* Relative positioning */
+    border: none; /* Removes border */
+    width: 180px; /* Sets width */
+    height: 40px; /* Sets height */
+    border-radius: 0; /* Removes border radius */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: .3s; /* Sets transition duration */
 }
+
+/* Let's Talk button text styles */
 .letsTalkBtn-text {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(230, 230, 230, .466);
-    border: none;
-    border-radius: 7px;
-    backdrop-filter: blur(5px);
-    color: #000;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: .8px;
+    width: 100%; /* Sets full width */
+    height: 100%; /* Sets full height */
+    background-color: rgba(230, 230, 230, .466); /* Sets background color */
+    border: none; /* Removes border */
+    border-radius: 7px; /* Rounds the corners */
+    backdrop-filter: blur(5px); /* Applies blur effect */
+    color: #000; /* Sets text color */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    letter-spacing: .8px; /* Sets letter spacing */
 }
+
+/* Hover effect for call to action and text */
 .cta:hover span, .text, .tooltip {
-    color: #fff;
+    color: #fff; /* Sets text color */
 }
+
+/* Resume button and sign styles */
 .resume-btn, .sign {
-    align-items: center;
-    transition-duration: .3s;
-    display: flex;
+    align-items: center; /* Centers items vertically */
+    transition-duration: .3s; /* Sets transition duration */
+    display: flex; /* Uses flexbox layout */
 }
+
+/* Background for Let's Talk button */
 .letsTalkBtn-BG {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(150deg, #71cbff, #8000ff);
-    z-index: -1;
-    left: 6px;
-    top: 6px;
-    border-radius: 7px;
-    pointer-events: none;
-    transition: .3s;
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Sets full width */
+    height: 100%; /* Sets full height */
+    background-image: linear-gradient(150deg, #71cbff, #8000ff); /* Sets gradient background */
+    z-index: -1; /* Sends element to back */
+    left: 6px; /* Positions element */
+    top: 6px; /* Positions element */
+    border-radius: 7px; /* Rounds the corners */
+    pointer-events: none; /* Disables pointer events */
+    transition: .3s; /* Sets transition duration */
 }
+
+/* Hover effect for Let's Talk button */
 .letsTalkBtn:hover {
-    transform: translateY(-2px) translateX(-2px);
+    transform: translateY(-2px) translateX(-2px); /* Transforms the element */
 }
+
+/* Hover effect for Let's Talk button background */
 .letsTalkBtn:hover .letsTalkBtn-BG {
-    transform: translateY(2px) translateX(2px);
+    transform: translateY(2px) translateX(2px); /* Transforms the element */
 }
+
+/* Active state for Let's Talk button */
 .letsTalkBtn:active {
-    transform: translateY(7px) translateX(7px);
+    transform: translateY(7px) translateX(7px); /* Transforms the element */
 }
+
+/* Active state for Let's Talk button background */
 .letsTalkBtn:active .letsTalkBtn-BG {
-    transform: translateY(-7px) translateX(-7px);
+    transform: translateY(-7px) translateX(-7px); /* Transforms the element */
 }
+
+/* Resume button styles */
 .resume-btn {
-    margin-top: 25px;
-    justify-content: flex-start;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
-    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
-    position: relative;
+    margin-top: 25px; /* Sets top margin */
+    justify-content: flex-start; /* Aligns items to the start */
+    width: 45px; /* Sets width */
+    height: 45px; /* Sets height */
+    border: none; /* Removes border */
+    border-radius: 50%; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .199); /* Adds shadow */
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%); /* Sets gradient background */
+    position: relative; /* Relative positioning */
 }
+
+/* Heading styles for projects, sections, and skills */
 .projects-heading-article, .projectsHeadingP, .section-heading-article, .sectionHeadingP, .skills-heading-article, .skillsHeadingP {
-    background-image: -webkit-gradient(linear, left top, right top, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
+    background-image: -webkit-gradient(linear, left top, right top, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
+    background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
 }
+
+/* Positioning for dp elements and text */
 .dp::after, .dp::before, .text {
-    position: absolute;
+    position: absolute; /* Absolute positioning */
 }
+
+/* Sign styles */
 .sign {
-    width: 100%;
-    justify-content: center;
+    width: 100%; /* Sets full width */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* SVG styles for sign */
 .sign svg {
-    width: 17px;
+    width: 17px; /* Sets width */
 }
+
+/* Text styles */
 .text {
-    right: 0;
-    width: 0%;
-    opacity: 0;
-    font-size: 1em;
-    font-weight: 600;
-    transition-duration: .3s;
+    right: 0; /* Positions element */
+    width: 0%; /* Sets width */
+    opacity: 0; /* Sets opacity */
+    font-size: 1em; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Hover effect for resume button */
 .resume-btn:hover {
-    width: 130px;
-    border-radius: 40px;
-    transition-duration: .3s;
+    width: 130px; /* Sets width */
+    border-radius: 40px; /* Rounds the corners */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Hover effect for sign */
 .resume-btn:hover .sign {
-    width: 30%;
-    transition-duration: .3s;
-    padding-left: 20px;
+    width: 30%; /* Sets width */
+    transition-duration: .3s; /* Sets transition duration */
+    padding-left: 20px; /* Sets left padding */
 }
+
+/* Hover effect for text */
 .resume-btn:hover .text {
-    opacity: 1;
-    width: 70%;
-    transition-duration: .3s;
-    padding-right: 10px;
+    opacity: 1; /* Sets opacity */
+    width: 70%; /* Sets width */
+    transition-duration: .3s; /* Sets transition duration */
+    padding-right: 10px; /* Sets right padding */
 }
+
+/* Transition styles for dp elements */
 .dp, .dp::after, .dp::before, .dp:hover::after, .dp:hover::before {
-    transition-duration: .5s;
+    transition-duration: .5s; /* Sets transition duration */
 }
+
+/* Active state for resume button */
 .resume-btn:active {
-    transform: translate(2px, 2px);
+    transform: translate(2px, 2px); /* Transforms the element */
 }
+
+/* About section container styles */
 .about-section-container {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 200px;
+    width: 100%; /* Sets full width */
+    height: fit-content; /* Sets height to fit content */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    flex-direction: column; /* Aligns items in a column */
+    padding-top: 200px; /* Sets top padding */
 }
+
+/* About section, projects, and skills section styles */
 .about-section, .projects-section-div, .skills-section {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 60%; /* Sets width */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Heading styles for projects, sections, and skills */
 .projects-heading, .section-heading, .skills-heading {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Sets gap between items */
 }
+
+/* DP element styles */
 .dp img, .dp::after, .dp::before {
-    width: 300px;
+    width: 300px; /* Sets width */
 }
+
+/* Project, section, and skills heading article styles */
 .projects-heading-article, .section-heading-article, .skills-heading-article {
-    font-size: 3rem;
-    font-family: fira code;
-    font-weight: 500;
-    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3rem; /* Sets font size */
+    font-family: fira code; /* Sets font family */
+    font-weight: 500; /* Sets font weight */
+    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
+    background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text; /* Clips background to text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
 }
+
+/* Project, section, and skills heading paragraph styles */
 .projectsHeadingP, .sectionHeadingP, .skillsHeadingP {
-    width: 300px;
-    height: 1px;
-    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
+    width: 300px; /* Sets width */
+    height: 1px; /* Sets height */
+    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
 }
+
+/* Info and DP section styles */
 .info-dp-section {
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    margin-top: 30px; /* Sets top margin */
 }
+
+/* About info styles */
 .about-info {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
+    width: 60%; /* Sets width */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
 }
+
+/* Paragraph styles for about info */
 .about-info p {
-    line-height: 25px;
+    line-height: 25px; /* Sets line height */
 }
+
+/* DP element styles */
 .dp {
-    width: 40%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
+    width: 40%; /* Sets width */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-start; /* Aligns items to the start */
+    justify-content: center; /* Centers items horizontally */
+    position: relative; /* Relative positioning */
 }
+
+/* DP element before styles */
 .dp::before {
-    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent;
+    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent; /* Sets shadow */
 }
+
+/* DP element after styles */
 .dp::after {
-    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff;
+    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff; /* Sets shadow */
 }
+
+/* Hover effect for DP element after */
 .dp:hover::after {
-    transform: translate(20px, 20px);
+    transform: translate(20px, 20px); /* Transforms the element */
 }
+
+/* Hover effect for DP element before */
 .dp:hover::before {
-    transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px); /* Transforms the element */
 }
+
+/* Skills section container styles */
 .skills-section-container {
-    padding-top: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 150px; /* Sets top padding */
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Language speak and tech stack wrapper styles */
 .language-speak, .tech-stack-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
 }
+
+/* Language speak styles */
 .language-speak {
-    height: 50px;
-    justify-content: center;
+    height: 50px; /* Sets height */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Language speak article styles */
 .language-speak article {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2rem; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
 }
+
+/* Frontend development section styles */
 .frontend-dev-section {
-    width: 100%;
-    margin-top: 50px;
+    width: 100%; /* Sets full width */
+    margin-top: 50px; /* Sets top margin */
 }
+
+/* Frontend development heading styles */
 .frontend-dev-heading {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: 900;
-    height: 100px;
-    letter-spacing: 5px;
-    background-image: -webkit-gradient(linear, left top, right top, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
-    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 100%; /* Sets full width */
+    text-align: center; /* Centers text */
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    font-size: 3rem; /* Sets font size */
+    font-weight: 900; /* Sets font weight */
+    height: 100px; /* Sets height */
+    letter-spacing: 5px; /* Sets letter spacing */
+    background-image: -webkit-gradient(linear, left top, right top, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
+    background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
+    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); /* Sets gradient background */
+    background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text; /* Clips background to text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
 }
+
+/* Background styles for project and tech stack boxes */
 .project-box, .tech-stack-box {
-    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color)); /* Sets gradient background */
 }
+
+/* Tech stack wrapper styles */
 .tech-stack-wrapper {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 50px;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Wraps items */
+    gap: 50px; /* Sets gap between items */
+    margin-top: 50px; /* Sets top margin */
 }
+
+/* Flexbox layout for tech stack box and tooltip */
 .tech-stack-box, .tooltip {
-    align-items: center;
-    display: flex;
+    align-items: center; /* Centers items vertically */
+    display: flex; /* Uses flexbox layout */
 }
+
+/* Tech stack box styles */
 .tech-stack-box {
-    width: 160px;
-    height: 160px;
-    justify-content: center;
-    border-radius: 30px;
-    border: 1px solid var(--tech-stack-box-border-color);
-    position: relative;
+    width: 160px; /* Sets width */
+    height: 160px; /* Sets height */
+    justify-content: center; /* Centers items horizontally */
+    border-radius: 30px; /* Rounds the corners */
+    border: 1px solid var(--tech-stack-box-border-color); /* Sets border color */
+    position: relative; /* Relative positioning */
 }
+
+/* Tech stack box image styles */
 .tech-stack-box img {
-    width: 80%;
+    width: 80%; /* Sets width */
 }
+
+/* Hover effect for tooltip */
 .tech-stack-box:hover .tooltip {
-    opacity: 1;
-    transition-duration: .3s;
+    opacity: 1; /* Sets opacity */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Tooltip styles */
 .tooltip {
-    position: absolute;
-    top: -20px;
-    opacity: 0;
-    background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-    border: 1px solid var(--tech-stack-box-border-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-    justify-content: center;
-    transition-duration: .2s;
-    pointer-events: none;
-    letter-spacing: .5px;
-    font-size: 1.6rem;
-    backdrop-filter: blur(5px);
-    font-weight: 500;
+    position: absolute; /* Absolute positioning */
+    top: -20px; /* Positions element */
+    opacity: 0; /* Sets opacity */
+    background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color)); /* Sets gradient background */
+    border: 1px solid var(--tech-stack-box-border-color); /* Sets border color */
+    padding: 5px 10px; /* Sets padding */
+    border-radius: 5px; /* Rounds the corners */
+    justify-content: center; /* Centers items horizontally */
+    transition-duration: .2s; /* Sets transition duration */
+    pointer-events: none; /* Disables pointer events */
+    letter-spacing: .5px; /* Sets letter spacing */
+    font-size: 1.6rem; /* Sets font size */
+    backdrop-filter: blur(5px); /* Applies blur effect */
+    font-weight: 500; /* Sets font weight */
 }
+
+/* Positioning styles for call to action, project box, and footer */
 .cta, .cta span, .cta svg, .project-box, footer {
-    position: relative;
+    position: relative; /* Relative positioning */
 }
+
+/* Projects section container styles */
 .projects-section-container {
-    padding: 150px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    padding: 150px 0; /* Sets vertical padding */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    width: 100%; /* Sets full width */
 }
+
+/* Project boxes container styles */
 .project-boxes-div {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 50px;
+    width: 100%; /* Sets full width */
+    height: fit-content; /* Sets height to fit content */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    gap: 50px; /* Sets gap between items */
+    padding: 50px; /* Sets padding */
 }
+
+/* Hover effect for call to action and project box wrapper */
 .cta:hover:before, .project-box-wrapper {
-    width: 100%;
+    width: 100%; /* Sets full width */
 }
+
+/* Project box styles */
 .project-box {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition-duration: .3s;
-    border-radius: 30px;
-    border: 1px solid var(--tech-stack-box-border-color);
+    width: 100%; /* Sets full width */
+    height: 400px; /* Sets height */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: row; /* Aligns items in a row */
+    justify-content: space-between; /* Spaces items evenly */
+    transition-duration: .3s; /* Sets transition duration */
+    border-radius: 30px; /* Rounds the corners */
+    border: 1px solid var(--tech-stack-box-border-color); /* Sets border color */
 }
+
+/* Info div styles */
 .info-div {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 40px;
+    width: 50%; /* Sets width */
+    height: 100%; /* Sets full height */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: flex-start; /* Aligns items to the start */
+    justify-content: center; /* Centers items vertically */
+    gap: 20px; /* Sets gap between items */
+    padding: 0 40px; /* Sets horizontal padding */
 }
+
+/* Project favicon styles */
 .faviconforProject {
-    width: 30px;
-    border-radius: 50%;
+    width: 30px; /* Sets width */
+    border-radius: 50%; /* Rounds the corners */
 }
+
+/* Aqua Regia project favicon styles */
 .faviconforProjectAquaregia {
-    width: 20px;
+    width: 20px; /* Sets width */
 }
+
+/* Image div styles */
 .image-div {
-    width: 50%;
-    height: 100%;
-    padding-top: 70px;
-    padding-left: 10px;
+    width: 50%; /* Sets width */
+    height: 100%; /* Sets full height */
+    padding-top: 70px; /* Sets top padding */
+    padding-left: 10px; /* Sets left padding */
 }
+
+/* Image styles for image div */
 .image-div img {
-    height: 100%;
-    border-top-left-radius: 30px;
+    height: 100%; /* Sets full height */
+    border-top-left-radius: 30px; /* Rounds the top left corner */
 }
+
+/* Project heading styles */
 .ProjectHeading {
-    color: var(--color-white);
-    font-size: 3.4rem;
-    font-weight: 700;
+    color: var(--color-white); /* Sets text color */
+    font-size: 3.4rem; /* Sets font size */
+    font-weight: 700; /* Sets font weight */
 }
+
+/* Project description styles */
 .ProjectDescription {
-    color: gray;
-    font-size: 1.7rem;
-    font-weight: 400;
+    color: gray; /* Sets text color */
+    font-size: 1.7rem; /* Sets font size */
+    font-weight: 400; /* Sets font weight */
 }
+
+/* Project buttons styles */
 .project-buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the start */
+    gap: 20px; /* Sets gap between items */
 }
+
+/* GitHub redirect styles */
 .github-redirect {
-    width: 50px;
+    width: 50px; /* Sets width */
 }
+
+/* Image styles for GitHub redirect */
 .github-redirect img {
-    width: 45px;
-    height: auto;
-    transition: .3s;
-    filter: brightness(2);
+    width: 45px; /* Sets width */
+    height: auto; /* Sets height to auto */
+    transition: .3s; /* Sets transition duration */
+    filter: brightness(2); /* Applies brightness filter */
 }
+
+/* Hover effect for GitHub redirect image */
 .github-redirect:hover img {
-    filter: brightness(4);
+    filter: brightness(4); /* Increases brightness */
 }
+
+/* Call to action styles */
 .cta {
-    padding: 12px 18px;
-    transition: .2s;
-    border: none;
-    background: 0 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 12px 18px; /* Sets padding */
+    transition: .2s; /* Sets transition duration */
+    border: none; /* Removes border */
+    background: 0 0; /* Transparent background */
+    cursor: pointer; /* Changes cursor to pointer */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the start */
 }
+
+/* Call to action before content styles */
 .cta::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #2b2f4e;
-    width: 45px;
-    height: 45px;
-    transition: .3s;
+    content: ""; /* Adds content */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Positions element */
+    display: block; /* Displays as block */
+    border-radius: 50px; /* Rounds the corners */
+    background: #2b2f4e; /* Sets background color */
+    width: 45px; /* Sets width */
+    height: 45px; /* Sets height */
+    transition: .3s; /* Sets transition duration */
 }
+
+/* Call to action span styles */
 .cta span {
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: .05em;
-    color: var(--color-light-blue);
+    font-size: 1.8rem; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+    letter-spacing: .05em; /* Sets letter spacing */
+    color: var(--color-light-blue); /* Sets text color */
 }
+
+/* Call to action SVG styles */
 .cta svg {
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--color-light-blue);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: .3s;
+    top: 0; /* Positions element */
+    margin-left: 10px; /* Sets left margin */
+    fill: none; /* Removes fill */
+    stroke-linecap: round; /* Sets stroke line cap */
+    stroke-linejoin: round; /* Sets stroke line join */
+    stroke: var(--color-light-blue); /* Sets stroke color */
+    stroke-width: 2; /* Sets stroke width */
+    transform: translateX(-5px); /* Transforms the element */
+    transition: .3s; /* Sets transition duration */
 }
+
+/* Hover effect for call to action SVG */
 .cta:hover svg {
-    stroke: white;
-    transform: translateX(0);
+    stroke: white; /* Sets stroke color */
+    transform: translateX(0); /* Transforms the element */
 }
+
+/* Active state for call to action */
 .cta:active {
-    transform: scale(.95);
+    transform: scale(.95); /* Scales the element */
 }
+
+/* Back to top button styles */
 #backtotopbutton {
-    position: fixed;
-    right: 10px;
-    bottom: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 3rem;
-    height: 15rem;
-    z-index: 101;
-    text-align: center;
-    transition: .4s;
-    display: none;
+    position: fixed; /* Fixed positioning */
+    right: 10px; /* Positions element */
+    bottom: 0; /* Positions element */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    border: none; /* Removes border */
+    width: 3rem; /* Sets width */
+    height: 15rem; /* Sets height */
+    z-index: 101; /* Ensures element is on top */
+    text-align: center; /* Centers text */
+    transition: .4s; /* Sets transition duration */
+    display: none; /* Hides the element */
 }
+
+/* Back to top button article styles */
 #backtotopbutton article {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    font-weight: 400;
-    writing-mode: vertical-rl;
-    mix-blend-mode: difference;
+    font-size: 1.5rem; /* Sets font size */
+    color: var(--color-white); /* Sets text color */
+    font-weight: 400; /* Sets font weight */
+    writing-mode: vertical-rl; /* Vertical text writing mode */
+    mix-blend-mode: difference; /* Sets blend mode */
 }
+
+/* Hover effect for back to top button */
 #backtotopbutton:hover {
-    transform: translate(0, -20px);
-    text-decoration: line-through var(--color-white);
+    transform: translate(0, -20px); /* Transforms the element */
+    text-decoration: line-through var(--color-white); /* Adds line-through decoration */
 }
+
+/* Footer styles */
 footer {
-    width: 100%;
-    height: fit-content;
-    border-top: 1px solid var(--tech-stack-box-border-color);
+    width: 100%; /* Sets full width */
+    height: fit-content; /* Sets height to fit content */
+    border-top: 1px solid var(--tech-stack-box-border-color); /* Sets border color */
 }
+
+/* Footer background styles */
 .footer-background {
-    width: 100%;
-    height: 100vh;
-    background-color: #0b0b0b;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 1;
+    width: 100%; /* Sets full width */
+    height: 100vh; /* Sets full height */
+    background-color: #0b0b0b; /* Sets background color */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-end; /* Aligns items to the end */
+    justify-content: center; /* Centers items horizontally */
+    z-index: 1; /* Sets z-index */
 }
+
+/* Footer blob styles */
 .footer-blob {
-    width: 100%;
-    height: 200px;
-    background-color: var(--color-light-purple);
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: .7;
+    width: 100%; /* Sets full width */
+    height: 200px; /* Sets height */
+    background-color: var(--color-light-purple); /* Sets background color */
+    border-radius: 50%; /* Rounds the corners */
+    filter: blur(100px); /* Applies blur effect */
+    opacity: .7; /* Sets opacity */
 }
+
+/* Footer foreground styles */
 .footer-foreground {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    backdrop-filter: blur(10px);
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Positions element */
+    width: 100%; /* Sets full width */
+    height: 100vh; /* Sets full height */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-end; /* Aligns items to the end */
+    justify-content: center; /* Centers items horizontally */
+    backdrop-filter: blur(10px); /* Applies blur effect */
 }
+
+/* Footer container styles */
 .footercontainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-end; /* Aligns items to the end */
 }
+
+/* Two words styles */
 .two-words {
-    color: #b3b3b3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
+    color: #b3b3b3; /* Sets text color */
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: 100px; /* Sets height */
 }
+
+/* Get in touch heading and logo styles */
 .getintouch-heading, .logos {
-    height: 80px;
-    width: 100%;
-    display: flex;
+    height: 80px; /* Sets height */
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
 }
+
+/* Two words article styles */
 .two-words article {
-    font-size: 3rem;
+    font-size: 3rem; /* Sets font size */
 }
+
+/* Social media container styles */
 .social-media-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    width: 100%; /* Sets full width */
 }
+
+/* Social media link styles */
 .social-media-container a {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 50%;
-    border: 2px solid #e2dede;
-    position: relative;
-    box-shadow: 0 0 0 #8000ff inset;
-    transition-duration: .3s;
+    width: 60px; /* Sets width */
+    height: 60px; /* Sets height */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-decoration: none; /* Removes text decoration */
+    padding: 10px; /* Sets padding */
+    border-radius: 50%; /* Rounds the corners */
+    border: 2px solid #e2dede; /* Sets border color */
+    position: relative; /* Relative positioning */
+    box-shadow: 0 0 0 #8000ff inset; /* Sets shadow */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Get in touch heading styles */
 .getintouch-heading {
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Get in touch heading article styles */
 .getintouch-heading article {
-    font-size: 2rem;
-    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 700;
+    font-size: 2rem; /* Sets font size */
+    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple)); /* Sets gradient background */
+    background-clip: text; /* Clips background to text */
+    -webkit-background-clip: text; /* Clips background to text */
+    font-weight: 700; /* Sets font weight */
 }
+
+/* Footer bottom article styles */
 .fa-copyright, .footer-bottom article {
-    font-size: 1.5rem;
-    color: #b0b0b0;
+    font-size: 1.5rem; /* Sets font size */
+    color: #b0b0b0; /* Sets text color */
 }
+
+/* Logos container styles */
 .logos {
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    gap: 30px; /* Sets gap between items */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
 }
+
+/* Social handle styles */
 .SocialHandle {
-    fill: white;
-    width: 60%;
+    fill: white; /* Sets fill color */
+    width: 60%; /* Sets width */
 }
+
+/* Gmail logo styles */
 #GmailLogo {
-    height: 70%;
+    height: 70%; /* Sets height */
 }
+
+/* Hover effect for social media links */
 .social-media-container a:hover {
-    box-shadow: 0 0 50px 100px #8000ff inset;
-    transition-duration: 1s;
-    border: none;
+    box-shadow: 0 0 50px 100px #8000ff inset; /* Sets shadow */
+    transition-duration: 1s; /* Sets transition duration */
+    border: none; /* Removes border */
 }
+
+/* Before content for social media links */
 .social-media-container a::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    border-radius: 50%;
-    transform: scale(0);
-    background-color: transparent;
-    transition-duration: .3s;
-    z-index: -1;
+    position: absolute; /* Absolute positioning */
+    content: ""; /* Adds content */
+    width: 100%; /* Sets full width */
+    height: 100%; /* Sets full height */
+    left: 0; /* Positions element */
+    border-radius: 50%; /* Rounds the corners */
+    transform: scale(0); /* Transforms the element */
+    background-color: transparent; /* Makes background transparent */
+    transition-duration: .3s; /* Sets transition duration */
+    z-index: -1; /* Sends element to back */
 }
+
+/* Hover effect for social media links */
 .social-media-container a:hover::before {
-    transform: scale(1);
-    transition-duration: .3s;
+    transform: scale(1); /* Transforms the element */
+    transition-duration: .3s; /* Sets transition duration */
 }
+
+/* Footer avatar container styles */
 .footer-avatar-container {
-    width: 220px;
-    margin-top: 20px;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    width: 220px; /* Sets width */
+    margin-top: 20px; /* Sets top margin */
+    position: relative; /* Relative positioning */
+    display: flex; /* Uses flexbox layout */
+    align-items: flex-end; /* Aligns items to the end */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Footer avatar image styles */
 .footer-avatar-img {
-    width: 100%;
-    z-index: 2;
+    width: 100%; /* Sets full width */
+    z-index: 2; /* Sets z-index */
 }
+
+/* Footer avatar face styles */
 .footer-avatar-face {
-    position: absolute;
-    width: 100%;
-    height: 97%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    padding-left: 5px;
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Sets full width */
+    height: 97%; /* Sets height */
+    z-index: 1; /* Sets z-index */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 18px; /* Sets gap between items */
+    padding-left: 5px; /* Sets left padding */
 }
+
+/* Footer avatar eye styles */
 .footer-avatar-eye {
-    width: 50px;
-    height: 50px;
-    background-color: #dfd2d2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50px; /* Sets width */
+    height: 50px; /* Sets height */
+    background-color: #dfd2d2; /* Sets background color */
+    border-radius: 50%; /* Rounds the corners */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
+
+/* Footer pupil styles */
 .footer-pupil {
-    width: 20px;
-    height: 20px;
-    background-color: #000;
-    border-radius: 50%;
-    border: 5px solid #413333;
-    filter: blur(.6px);
+    width: 20px; /* Sets width */
+    height: 20px; /* Sets height */
+    background-color: #000; /* Sets background color */
+    border-radius: 50%; /* Rounds the corners */
+    border: 5px solid #413333; /* Sets border color */
+    filter: blur(.6px); /* Applies blur effect */
 }
+
+/* Right eye shadow for footer */
 .footer-right-eye {
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, .233) inset, 10px 10px 5px rgba(41, 33, 33, .644) inset;
-    position: relative;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, .233) inset, 10px 10px 5px rgba(41, 33, 33, .644) inset; /* Sets shadow */
+    position: relative; /* Relative positioning */
 }
+
+/* Left eye shadow for footer */
 .footer-left-eye {
-    box-shadow: -10px -15px 5px rgba(0, 0, 0, .349) inset;
-    position: relative;
+    box-shadow: -10px -15px 5px rgba(0, 0, 0, .349) inset; /* Sets shadow */
+    position: relative; /* Relative positioning */
 }
+
+/* Footer avatar eye before content */
 .footer-avatar-eye::before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: rgba(214, 214, 214, .726);
-    z-index: 2;
-    filter: blur(.2px);
-    left: 15px;
-    transform: rotate(45deg);
+    position: absolute; /* Absolute positioning */
+    content: ""; /* Adds content */
+    width: 2px; /* Sets width */
+    height: 5px; /* Sets height */
+    border-radius: 50%; /* Rounds the corners */
+    background-color: rgba(214, 214, 214, .726); /* Sets background color */
+    z-index: 2; /* Sets z-index */
+    filter: blur(.2px); /* Applies blur effect */
+    left: 15px; /* Positions element */
+    transform: rotate(45deg); /* Rotates the element */
 }
+
+/* Footer bottom styles */
 .footer-bottom {
-    background-color: #0b0b0b;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    z-index: 3;
+    background-color: #0b0b0b; /* Sets background color */
+    width: 100%; /* Sets full width */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: 80px; /* Sets height */
+    z-index: 3; /* Sets z-index */
 }
+
+/* Tone change styles */
 .tonechange {
-    color: #000;
+    color: #000; /* Sets text color */
 }
+
+/* Media queries for screen width 1920px */
 @media screen and (max-width: 1920px) {
     html {
-        font-size: 60%;
+        font-size: 60%; /* Sets font size */
     }
 }
+
+/* Media queries for screen width 1400px */
 @media screen and (max-width: 1400px) {
     html {
-        font-size: 60%;
+        font-size: 60%; /* Sets font size */
     }
 }
+
+/* Media queries for screen width 1200px */
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 60%;
+        font-size: 60%; /* Sets font size */
     }
     .projects-section-div, .skills-section, .text-content {
-        width: 80%;
+        width: 80%; /* Sets width */
     }
     .about-section {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 80%; /* Sets width */
+        display: flex; /* Uses flexbox layout */
+        flex-direction: column; /* Aligns items in a column */
+        align-items: center; /* Centers items vertically */
+        justify-content: center; /* Centers items horizontally */
     }
     .logo:hover {
-        transform: translateY(200px);
-        transition-duration: 1s;
+        transform: translateY(200px); /* Transforms the element */
+        transition-duration: 1s; /* Sets transition duration */
     }
 }
+
+/* Media queries for screen width 1150px */
 @media screen and (max-width: 1150px) {
     html {
-        font-size: 60%;
+        font-size: 60%; /* Sets font size */
     }
 }
+
+/* Media queries for screen width 998px */
 @media screen and (max-width: 998px) {
     #hamburger-button, .hamburger {
-        background-color: transparent;
+        background-color: transparent; /* Sets background color */
     }
     .mobile-navbar-tabs-ul a, .mobiletogglemenu {
-        text-decoration: none;
+        text-decoration: none; /* Removes text decoration */
     }
     .activeThismobiletab, .mobile-navbar-tabs-ul a {
-        color: var(--color-white);
+        color: var(--color-white); /* Sets text color */
     }
     html {
-        font-size: 55%;
+        font-size: 55%; /* Sets font size */
     }
     .blob, .cursor-inner, .cursor-outer, .navbar-tabs-ul {
-        display: none;
+        display: none; /* Hides the elements */
     }
     .stopscrolling {
-        overflow: hidden;
+        overflow: hidden; /* Hides overflow */
     }
     .hamburger {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 115px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        z-index: 9998;
+        position: fixed; /* Fixed positioning */
+        top: 0; /* Positions element */
+        width: 100vw; /* Sets full width */
+        height: 115px; /* Sets height */
+        display: flex; /* Uses flexbox layout */
+        align-items: flex-end; /* Aligns items to the end */
+        justify-content: center; /* Centers items horizontally */
+        z-index: 9998; /* Sets z-index */
     }
     .activeThismobiletab:before, .burger-bar, .hamburger-animation1, .hamburger-animation2, .hamburger-animation3 {
-        background-color: var(--color-white);
+        background-color: var(--color-white); /* Sets background color */
     }
     .hamburgerbase {
-        width: 80%;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 20px;
+        width: 80%; /* Sets width */
+        height: 80px; /* Sets height */
+        display: flex; /* Uses flexbox layout */
+        align-items: center; /* Centers items vertically */
+        justify-content: flex-end; /* Aligns items to the end */
+        padding: 20px; /* Sets padding */
     }
     #hamburger-button {
-        font-size: 3rem;
-        font-weight: 800;
-        width: 4.5rem;
-        height: 3.5rem;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        font-size: 3rem; /* Sets font size */
+        font-weight: 800; /* Sets font weight */
+        width: 4.5rem; /* Sets width */
+        height: 3.5rem; /* Sets height */
+        border: none; /* Removes border */
+        display: flex; /* Uses flexbox layout */
+        flex-direction: column; /* Aligns items in a column */
+        align-items: center; /* Centers items vertically */
+        justify-content: space-between; /* Spaces items evenly */
     }
     #burger-bar1, #burger-bar2, #burger-bar3 {
-        height: 3px;
-        border-radius: 0;
-        transition-duration: .3s;
+        height: 3px; /* Sets height */
+        border-radius: 0; /* Removes border radius */
+        transition-duration: .3s; /* Sets transition duration */
     }
     #burger-bar1, #burger-bar3 {
-        width: 60%;
+        width: 60%; /* Sets width */
     }
     #burger-bar2 {
-        width: 100%;
+        width: 100%; /* Sets width */
     }
     .hamburger-animation1 {
-        transform: rotate(45deg) scaleX(1.7);
-        transition-duration: .3s;
-        transform-origin: left;
+        transform: rotate(45deg) scaleX(1.7); /* Transforms the element */
+        transition-duration: .3s; /* Sets transition duration */
+        transform-origin: left; /* Sets transform origin */
     }
     .hamburger-animation2 {
-        transform: scaleX(0);
+        transform: scaleX(0); /* Transforms the element */
     }
     .hamburger-animation3 {
-        transform: rotateZ(-45deg) scaleX(1.7);
-        transform-origin: left;
-        transition-duration: .3s;
+        transform: rotateZ(-45deg) scaleX(1.7); /* Transforms the element */
+        transform-origin: left; /* Sets transform origin */
+        transition-duration: .3s; /* Sets transition duration */
     }
     .mobiletogglemenu {
-        background-color: transparent;
-        z-index: 9990;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        list-style: none;
-        font-size: 2rem;
-        cursor: pointer;
-        display: flex;
-        transform: translate(1000px);
-        transition-duration: 1s;
+        background-color: transparent; /* Sets background color */
+        z-index: 9990; /* Sets z-index */
+        height: 100%; /* Sets full height */
+        width: 100%; /* Sets full width */
+        position: fixed; /* Fixed positioning */
+        top: 0; /* Positions element */
+        right: 0; /* Positions element */
+        list-style: none; /* Removes list styling */
+        font-size: 2rem; /* Sets font size */
+        cursor: pointer; /* Changes cursor to pointer */
+        display: flex; /* Uses flexbox layout */
+        transform: translate(1000px); /* Transforms the element */
+        transition-duration: 1s; /* Sets transition duration */
     }
     .show-toggle-menu {
-        transform: translate(0);
-        transition-duration: .6s;
+        transform: translate(0); /* Transforms the element */
+        transition-duration: .6s; /* Sets transition duration */
     }
     .mobile-navbar-tabs-ul {
-        background-color: var(--color-dark-mode);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 70px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .176);
+        background-color: var(--color-dark-mode); /* Sets background color */
+        width: 100%; /* Sets full width */
+        height: 100%; /* Sets full height */
+        display: flex; /* Uses flexbox layout */
+        flex-direction: column; /* Aligns items in a column */
+        justify-content: center; /* Centers items vertically */
+        align-items: center; /* Centers items horizontally */
+        gap: 70px; /* Sets gap between items */
+        box-shadow: 0 0 30px rgba(0, 0, 0, .176); /* Adds shadow */
     }
     .mobile-navbar-tabs-li {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8rem;
-        font-weight: 600;
-        position: relative;
-        cursor: pointer;
-        font-family: fira code;
-        height: 30px;
-        width: fit-content;
+        text-align: center; /* Centers text */
+        display: flex; /* Uses flexbox layout */
+        align-items: center; /* Centers items vertically */
+        justify-content: center; /* Centers items horizontally */
+        font-size: 1.8rem; /* Sets font size */
+        font-weight: 600; /* Sets font weight */
+        position: relative; /* Relative positioning */
+        cursor: pointer; /* Changes cursor to pointer */
+        font-family: fira code; /* Sets font family */
+        height: 30px; /* Sets height */
+        width: fit-content; /* Sets width to fit content */
     }
     .about-info, .dp, .info-dp-section {
-        width: 100%;
-        display: flex;
+        width: 100%; /* Sets full width */
+        display: flex; /* Uses flexbox layout */
     }
     .info-dp-section {
-        flex-direction: column;
-        margin-top: 30px;
-        gap: 30px;
+        flex-direction: column; /* Aligns items in a column */
+        margin-top: 30px; /* Sets top margin */
+        gap: 30px; /* Sets gap between items */
     }
     .about-info {
-        flex-direction: column;
+        flex-direction: column; /* Aligns items in a column */
     }
     .dp {
-        align-items: center;
-        justify-content: center;
+        align-items: center; /* Centers items vertically */
+        justify-content: center; /* Centers items horizontally */
     }
     .activeThismobiletab:before {
-        content: "";
-        position: absolute;
-        height: 10px;
-        width: 10px;
-        left: -20px;
-        border-radius: 50%;
+        content: ""; /* Adds content */
+        position: absolute; /* Absolute positioning */
+        height: 10px; /* Sets height */
+        width: 10px; /* Sets width */
+        left: -20px; /* Positions element */
+        border-radius: 50%; /* Rounds the corners */
     }
     .projects-section-div {
-        width: 80%;
+        width: 80%; /* Sets width */
     }
     .project-box {
-        flex-direction: column;
-        height: 800px;
+        flex-direction: column; /* Aligns items in a column */
+        height: 800px; /* Sets height */
     }
     .image-div, .info-div {
-        width: 100%;
-        height: 50%;
+        width: 100%; /* Sets full width */
+        height: 50%; /* Sets half height */
     }
     .image-div {
-        padding: 0 0 0 80px;
+        padding: 0 0 0 80px; /* Sets padding */
     }
 }
+
+/* Media queries for screen width 768px */
 @media screen and (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 50%; /* Sets font size */
     }
     .text-content {
-        padding-left: 0;
-        width: 80%;
+        padding-left: 0; /* Removes left padding */
+        width: 80%; /* Sets width */
     }
     #hello-friend {
-        height: 100px;
-        font-size: 3.5rem;
+        height: 100px; /* Sets height */
+        font-size: 3.5rem; /* Sets font size */
     }
     #name, #work {
-        font-size: 5.5rem;
+        font-size: 5.5rem; /* Sets font size */
     }
     #info-para, .language-name {
-        width: 100%;
+        width: 100%; /* Sets full width */
     }
     .contact-btn-div {
-        height: 140px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 20px;
+        height: 140px; /* Sets height */
+        display: flex; /* Uses flexbox layout */
+        flex-direction: column-reverse; /* Reverses column order */
+        align-items: flex-start; /* Aligns items to the start */
+        justify-content: flex-start; /* Aligns items to the start */
+        gap: 20px; /* Sets gap between items */
     }
     .setting-container {
-        margin-left: 0;
+        margin-left: 0; /* Removes left margin */
     }
     .dp::after, .dp::before {
-        display: none;
+        display: none; /* Hides elements */
     }
     .logo {
-        width: 18%;
+        width: 18%; /* Sets width */
     }
     .logo:hover {
-        transform: translateY(200px);
-        transition-duration: 1s;
+        transform: translateY(200px); /* Transforms the element */
+        transition-duration: 1s; /* Sets transition duration */
     }
     .projects-section-div {
-        width: 80%;
+        width: 80%; /* Sets width */
     }
     .project-boxes-div {
-        padding: 40px 0;
+        padding: 40px 0; /* Sets vertical padding */
     }
 }
+
+/* Media queries for screen width 500px */
 @media screen and (max-width: 500px) {
     html {
-        font-size: 45%;
+        font-size: 45%; /* Sets font size */
     }
     .hamburgerbase, .navbar {
-        height: 70px;
+        height: 70px; /* Sets height */
     }
     #hamburger {
-        margin-right: 20px;
-        height: 115px;
-        align-items: flex-end;
+        margin-right: 20px; /* Sets right margin */
+        height: 115px; /* Sets height */
+        align-items: flex-end; /* Aligns items to the end */
     }
     #hello-friend, .two-words article {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Sets font size */
     }
     .hey {
-        left: 70px;
+        left: 70px; /* Positions element */
     }
     .logo:hover {
-        transform: translateY(200px);
-        transition-duration: 1s;
+        transform: translateY(200px); /* Transforms the element */
+        transition-duration: 1s; /* Sets transition duration */
     }
     .landing-page-container {
-        height: 85vh;
+        height: 85vh; /* Sets height */
     }
     .text-content {
-        justify-content: flex-start;
+        justify-content: flex-start; /* Aligns items to the start */
     }
     .project-box {
-        height: 550px;
+        height: 550px; /* Sets height */
     }
     .info-div {
-        height: 60%;
+        height: 60%; /* Sets height */
     }
     .image-div {
-        height: 40%;
-        padding-left: 50px;
+        height: 40%; /* Sets height */
+        padding-left: 50px; /* Sets left padding */
     }
     .image-div img {
-        border-top-left-radius: 10px;
+        border-top-left-radius: 10px; /* Rounds the top left corner */
     }
     .tech-stack-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        display: grid; /* Uses grid layout */
+        grid-template-columns: 1fr 1fr; /* Sets grid template */
+        gap: 20px; /* Sets gap between items */
     }
     .tech-stack-box {
-        width: 100%;
-        height: calc(76vw / 2);
+        width: 100%; /* Sets full width */
+        height: calc(76vw / 2); /* Sets height */
     }
 }
+
+/* Media queries for screen width 430px */
 @media screen and (max-width: 430px) {
     html {
-        font-size: 45%;
+        font-size: 45%; /* Sets font size */
     }
     .about-section, .projects-section-div, .skills-section {
-        width: 80%;
+        width: 80%; /* Sets width */
     }
     .info-div {
-        padding: 0 30px;
+        padding: 0 30px; /* Sets padding */
     }
     .two-words article {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* Sets font size */
     }
 }
+
+/* Media queries for screen width 375px */
 @media screen and (max-width: 375px) {
     html {
-        font-size: 42%;
+        font-size: 42%; /* Sets font size */
     }
     .dp img {
-        width: 200px;
+        width: 200px; /* Sets width */
     }
     .two-words {
-        height: 50px;
+        height: 50px; /* Sets height */
     }
     .two-words article {
-        font-size: 2rem;
+        font-size: 2rem; /* Sets font size */
     }
     .footer-bottom article {
-        font-size: 1.3rem;
+        font-size: 1.3rem; /* Sets font size */
     }
     .logos {
-        gap: 20px;
+        gap: 20px; /* Sets gap between items */
     }
 }
+
+/* Media queries for screen width 300px */
 @media screen and (max-width: 300px) {
     html {
-        font-size: 42%;
+        font-size: 42%; /* Sets font size */
     }
     .language-name article {
-        text-align: center;
+        text-align: center; /* Centers text */
     }
     .two-words {
-        align-items: flex-end;
-        height: 50px;
+        align-items: flex-end; /* Aligns items to the end */
+        height: 50px; /* Sets height */
     }
     .two-words article {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Sets font size */
     }
     .footer-bottom article {
-        font-size: 1rem;
+        font-size: 1rem; /* Sets font size */
     }
     .social-media-container a {
-        width: 50px;
-        height: 50px;
+        width: 50px; /* Sets width */
+        height: 50px; /* Sets height */
     }
     .logos {
-        gap: 20px;
+        gap: 20px; /* Sets gap between items */
     }
 }
 
+/* Degree text styles */
 .degree {
-    font-size: 2.5em; /* adjust as needed */
-    font-weight: bold;
-    color: white; /* or any light color */
+    font-size: 2.5em; /* Adjusts font size */
+    font-weight: bold; /* Sets font weight */
+    color: white; /* Sets text color */
 }
 
+/* University text styles */
 .university {
-    font-size: 0.01em; /* adjust as needed */
-    color: white; /* or any light color */
+    font-size: 0.01em; /* Adjusts font size */
+    color: white; /* Sets text color */
 }
 
+/* Description text styles */
 .description {
-    font-size: 0.01em; /* adjust as needed */
-    color: white; /* or any light color */
+    font-size: 0.01em; /* Adjusts font size */
+    color: white; /* Sets text color */
 }
 
+/* Favicon styles for DSC project */
 .faviconforDSCProject {
-    width: 100px;
-    border-radius: 50%;
+    width: 100px; /* Sets width */
+    border-radius: 50%; /* Rounds the corners */
 }
 
+/* Visitor badge container styles */
 .visitor-badge-container {
-    position: fixed;
-    top: 10px; /* Adjust as needed to place it vertically where you want */
-    right: 10px; /*used to move 10px to left from right*/
-    width: 70px; /* This can be adjusted or removed based on your preference */
-    height: auto;
+    position: fixed; /* Fixed positioning */
+    top: 10px; /* Positions element */
+    right: 10px; /* Positions element */
+    width: 70px; /* Sets width */
+    height: auto; /* Sets height to auto */
     /* transform: rotate(90deg); */
-    /* This ensures the badge doesn't overflow the viewport width */
-    overflow: hidden;
+    /* Ensures badge doesn't overflow viewport width */
+    overflow: hidden; /* Hides overflow */
 }
 
+/* Visitor badge image styles */
 .visitor-badge-container img {
-    width: 100%; /* Makes the image fully occupy the container's width */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; /* Sets full width */
+    height: auto; /* Sets height to auto */
 }
