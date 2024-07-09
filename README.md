@@ -4,7 +4,7 @@
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/adilamanmohammed/adilamanmohammed.github.io/tree/main)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://adilamanmohammed.github.io/#home)
 
-# <img width="100%" alt="Portfolio Screenshot" src="src/Screenshot.png">
+<img width="100%" alt="Portfolio Screenshot" src="src/Screenshot.png">
 
 
 :star: Star me on GitHub — it helps!
