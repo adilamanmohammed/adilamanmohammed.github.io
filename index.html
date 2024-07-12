@@ -1,165 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- The root element of an HTML document, with the language attribute set to English -->
 
+<head> <!-- The head element contains meta-information about the document -->
+  <!-- Meta tags for character encoding, compatibility, and viewport settings -->
+  <meta charset="UTF-8" /> <!-- Sets the character encoding to UTF-8 to support all characters -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ensures the document is rendered using the latest IE rendering engine -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Controls the viewport's size and scale, making the website responsive on all devices -->
 
-<head>
+  <!-- Favicon and icons for different platforms -->
+  <link rel="icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- Specifies the icon in the browser tab -->
+  <link rel="apple-touch-icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- Icon for Apple touch devices (iPhones, iPads) -->
+  <link rel="fluid-icon" href="images/Adil_icon.jpeg" title="Adil Aman Mohammed"> <!-- Icon for GitHub's fluid icon feature -->
+  <link rel="shortcut icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- A shortcut icon for the webpage, often used by browsers -->
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel=icon type=image/png href=images/Adil_icon.jpeg>
-  <link rel=apple-touch-icon type=image/png href=images/Adil_icon.jpeg>
-  <link rel="fluid-icon" href="images/Adil_icon.jpeg" title="Adil Aman Mohammed">
-  <link rel="shortcut icon" type="image/png" href="images/Adil_icon.jpeg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="description"
-    content="Adil Aman Mohammed | Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." />
-  <meta name="keywords"
-    content="Adil Mohammed Aman, Adil Aman Mohammed Portfolio, Adil Aman Mohammed Portfolio, adilamanmohammed, Adil Mohammed Aman Site, Adil Mohammed Aman Site, adilamanmohammed me, adilamanmohammed web, adilamanmohammed github, adilamanmohammed site, adilamanmohammed universe, universe, Adil Mohammed Aman Universe, Adil Mohammed Aman Frontend Developer, Frontend Developer, Adil Mohammed Aman Stillwater, Adil Stillwater" />
-  <meta name="author" content="Adil Aman Mohammed" />
-  <meta property="og:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" />
+  <!-- Meta tags for SEO and social media sharing -->
+  <meta name="robots" content="index, follow" /> <!-- Tells search engines to index the page and follow links -->
+  <meta name="theme-color" content="#000" /> <!-- Sets the theme color for the browser's address bar -->
+  <meta name="description" content="Adil Aman Mohammed | Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." /> <!-- A brief description of the webpage content for search engines -->
+  <meta name="keywords" content="Adil Mohammed Aman, Adil Aman Mohammed Portfolio, Adil Aman Mohammed Portfolio, adilamanmohammed, Adil Mohammed Aman Site, Adil Mohammed Aman Site, adilamanmohammed me, adilamanmohammed web, adilamanmohammed github, adilamanmohammed site, adilamanmohammed universe, universe, Adil Mohammed Aman Universe, Adil Mohammed Aman Frontend Developer, Frontend Developer, Adil Mohammed Aman Stillwater, Adil Stillwater" /> <!-- Keywords that describe the content of the webpage for search engines -->
+  <meta name="author" content="Adil Aman Mohammed" /> <!-- Specifies the author of the webpage -->
+  
+  <!-- Open Graph meta tags for social media sharing -->
+  <meta property="og:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" /> <!-- URL of the image that appears when the page is shared on social media -->
+  <meta property="og:title" content="Adil Aman Mohammed | Portfolio" /> <!-- Title of the page when shared on social media -->
+  <meta property="og:description" content="Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." /> <!-- Description of the page when shared on social media -->
+  <meta property="og:url" content="https://adilamanmohammed.github.io" /> <!-- URL of the page when shared on social media -->
+  <meta property="og:site_name" content="Adil Aman Mohammed Portfolio" /> <!-- Name of the site when shared on social media -->
+  
+  <!-- Twitter meta tags for social media sharing -->
+  <meta name="twitter:title" content="Adil Aman Mohammed | Portfolio" /> <!-- Title of the page when shared on Twitter -->
+  <meta name="twitter:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" /> <!-- URL of the image that appears when the page is shared on Twitter -->
+  <meta name="twitter:url" content="https://adilamanmohammed.github.io" /> <!-- URL of the page when shared on Twitter -->
 
-  <meta property="og:title" content="Adil Aman Mohammed | Portfolio" />
-  <meta property="og:description"
-    content="Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." />
+  <title>Adil Aman Mohammed | Portfolio</title> <!-- The title of the document, which appears in the browser tab -->
 
-  <meta property="og:url" content="https://adilamanmohammed.github.io" />
-  <meta property="og:site_name" content="Adil Aman Mohammed Portfolio" />
-  <meta name="twitter:title" content="Adil Aman Mohammed | Portfolio" />
-  <meta name="twitter:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" />
-  <meta name="twitter:url" content="https://adilamanmohammed.github.io" />
-
-  <title>Adil Aman Mohammed | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="images/Adil.icon.jpeg" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <!-- Stylesheets and fonts -->
+  <link rel="icon" type="image/x-icon" href="images/Adil.icon.jpeg" /> <!-- Specifies a favicon for the website -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Link to an external stylesheet for the Animate On Scroll library -->
+  <link rel="stylesheet" href="style.css" /> <!-- Link to the main stylesheet for the webpage -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" /> <!-- Link to Google Fonts for custom typography -->
 </head>
-<body class="body">
+
+<body class="body"> <!-- The body element contains the content of the document, with a class "body" for styling -->
+  <!-- Commented out audio tag with autoplay -->
   <!-- <audio loop autoplay id="audioPlayer" style="display: none">
     <source src="src/mp3/preloader.mp3" type="audio/mp3 " />
   </audio> -->
-  <audio loop id="audioPlayer" >
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  
+  <audio loop id="audioPlayer" > <!-- Audio tag to embed sound content, with loop attribute to repeat the audio -->
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" /> <!-- Specifies the audio file and its type -->
   </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
+  
+  <div id="preloader"></div> <!-- A div element with id "preloader" for displaying a loading animation -->
+  <noscript>Allow Javascript</noscript> <!-- Message displayed if JavaScript is disabled in the browser -->
 
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-    <div class="visitor-badge-container">
-      <img src="https://visitor-badge.laobi.icu/badge?page_id=adilamanmohammed" alt="Visitors">
+  <header> <!-- The header element represents the introductory content or navigation links -->
+    <div class="cursor-inner" id="cursor-inner"></div> <!-- Div for custom cursor inner element -->
+    <div class="cursor-outer" id="cursor-outer"></div> <!-- Div for custom cursor outer element -->
+    <div class="visitor-badge-container"> <!-- Div container for visitor badge -->
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=adilamanmohammed" alt="Visitors"> <!-- Visitor badge image -->
     </div>
 
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="Adil Aman Mohammed logo">
+    <div class="navbar" id="navbar"> <!-- Div for navigation bar with id "navbar" -->
+      <div class="hey">Hey!</div> <!-- Div with greeting text -->
+      <div class="logo" tabindex="0" aria-label="Adil Aman Mohammed logo"> <!-- Logo div with tabindex for keyboard navigation and aria-label for accessibility -->
         <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" />
+          <img src="src/png/nav-avatar.png" alt="animation-head" /> <!-- Logo image -->
         </div>
       </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
+      <div class="navbar-tabs" id="navbar-tabs"> <!-- Div for navigation tabs -->
+        <ul class="navbar-tabs-ul"> <!-- Unordered list for navigation items -->
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100"> <!-- List item with class and data attributes for AOS animations -->
+            <a href="#home" tabindex="0" aria-label="Home menu button"> <!-- Anchor link to the home section with tabindex and aria-label for accessibility -->
+              &#60;/Home&#62; <!-- Home link text with HTML entity for angle brackets -->
             </a>
           </li>
 
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300"> <!-- List item for about section -->
+            <a href="#about" aria-label="about menu button"> <!-- Anchor link to the about section -->
+              &#60;/AboutMe&#62; <!-- About me link text -->
             </a>
           </li>
 
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#education" aria-label="Education menu button">
-              &#60;/Education&#62;
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500"> <!-- List item for education section -->
+            <a href="#education" aria-label="Education menu button"> <!-- Anchor link to the education section -->
+              &#60;/Education&#62; <!-- Education link text -->
             </a>
           </li>
 
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500"> <!-- List item for skills section -->
+            <a href="#skills" aria-label="skills menu button"> <!-- Anchor link to the skills section -->
+              &#60;/Skills&#62; <!-- Skills link text -->
             </a>
           </li>
 
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700"> <!-- List item for projects section -->
+            <a href="#projects" aria-label="projects menu button"> <!-- Anchor link to the projects section -->
+              &#60;/Projects&#62; <!-- Projects link text -->
             </a>
           </li>
         </ul>
       </div>
       
-      <!-- <div class="visitor-badge-container">
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=adilamanmohammed" alt="Visitors">
-      </div> -->
-      
-
-      <!-- navbar tabs ends -->
     </div>
   </header>
   <!-- header ends here -->
 
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
+  <main> <!-- The main element represents the main content of the document -->
+    <!-- hamburger menu for mobile devices -->
+    <div class="hamburger" id="hamburger" data-aos="fade"> <!-- Div for hamburger menu with AOS animation -->
       <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button"> <!-- Button for hamburger menu with onclick event handler -->
+          <span class="burger-bar" id="burger-bar1"></span> <!-- Span for burger bar -->
+          <span class="burger-bar" id="burger-bar2"></span> <!-- Span for burger bar -->
+          <span class="burger-bar" id="burger-bar3"></span> <!-- Span for burger bar -->
         </button>
       </div>
     </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
+    <!-- mobile toggle menu -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu"> <!-- Div for mobile toggle menu -->
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul"> <!-- Unordered list for mobile navigation items -->
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()"> <!-- List item for home section in mobile menu -->
+          <a href="#home" tabindex="0" aria-label="Home menu button"> <!-- Anchor link to the home section -->
+            &#60;/Home&#62; <!-- Home link text -->
           </a>
         </li>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()"> <!-- List item for about section in mobile menu -->
+          <a href="#about" tabindex="0" aria-label="about menu button"> <!-- Anchor link to the about section -->
+            &#60;/AboutMe&#62; <!-- About me link text -->
           </a>
         </li>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#education" tabindex="0" aria-label="Education menu button">
-            &#60;/Education&#62;
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()"> <!-- List item for education section in mobile menu -->
+          <a href="#education" tabindex="0" aria-label="Education menu button"> <!-- Anchor link to the education section -->
+            &#60;/Education&#62; <!-- Education link text -->
           </a>
         </li>
         
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()"> <!-- List item for skills section in mobile menu -->
+          <a href="#skills" tabindex="0" aria-label="skills menu button"> <!-- Anchor link to the skills section -->
+            &#60;/Skills&#62; <!-- Skills link text -->
           </a>
         </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()"> <!-- List item for projects section in mobile menu -->
+          <a href="#projects" tabindex="0" aria-label="projects menu button"> <!-- Anchor link to the projects section -->
+            &#60;/Projects&#62; <!-- Projects link text -->
           </a>
         </li>
       </ul>
     </div>
     <!-- mobile toggle menu ends -->
 
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
+    <section class="landing-page-container" id="home"> <!-- Section for the landing page, with id "home" -->
+      <div class="blob"></div> <!-- Decorative element -->
 
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">H</p>
+      <div class="text-content"> <!-- Div for text content -->
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0"> <!-- Article with AOS animation for hello text -->
+          <p class="jello">H</p> <!-- Paragraph for each letter with class "jello" for styling -->
           <p class="jello">e</p>
           <p class="jello">l</p>
           <p class="jello">l</p>
@@ -167,12 +165,12 @@
           <p class="jello">(</p>
           <p class="jello">)</p>
           <p class="jello">;</p>
-          &nbsp;
+          &nbsp; <!-- Non-breaking space -->
           <p class="jello">I</p>
           <p class="jello">'</p>
           <p class="jello">m</p>
         </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
+        <article id="name" data-aos="fade-up" data-aos-delay="200"> <!-- Article with AOS animation for name text -->
           <p class="jello">A</p>
           <p class="jello">d</p>
           <p class="jello">i</p>
@@ -194,13 +192,13 @@
 		  <p class="jello">.</p>
         </article>
 
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
+        <article id="work" data-aos="fade-up" data-aos-delay="400"> <!-- Article with AOS animation for work text -->
 
           <!-- <div>
             <p class="jello">A</p>
           </div> -->
 
-          <div>
+          <div> <!-- Div for work text -->
             <p class="jello">F</p>
             <p class="jello">u</p>
             <p class="jello">l</p>
@@ -208,7 +206,7 @@
           
           </div>
 
-          <div>
+          <div> <!-- Div for stack text -->
             <p class="jello">S</p>
             <p class="jello">t</p>
             <p class="jello">a</p>
@@ -216,25 +214,25 @@
             <p class="jello">k</p>
           </div>
 
-          <div>
+          <div> <!-- Div for and text -->
             <p class="jello">a</p>
             <p class="jello">n</p>
             <p class="jello">d</p>
           </div>
 
-          <div>
+          <div> <!-- Div for iOS text -->
             <p class="jello">I</p>
             <p class="jello">O</p>
             <p class="jello">S</p>
           </div>
 
-          <div>
+          <div> <!-- Div for app text -->
             <p class="jello">A</p>
             <p class="jello">p</p>
             <p class="jello">p</p>
           </div>
           
-          <div>
+          <div> <!-- Div for developer text -->
             <p class="jello">D</p>
             <p class="jello">e</p>
             <p class="jello">v</p>
@@ -247,210 +245,200 @@
           </div>
   
         </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600"> <!-- Paragraph with AOS animation for additional info -->
           Web Developer with experience of Digital Concept Arts, Frontend Web
           Designs. I Love fun Web UI, collaboration and making products.<br />
           <br />
           I value simple content structure, clean design patterns, and
           thoughtful interactions.
         </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:adil.mohammed@okstate.edu" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800"> <!-- Div for contact button with AOS animation -->
+          <a href="mailto:adil.mohammed@okstate.edu" tabindex="-1"> <!-- Anchor link to email with tabindex for accessibility -->
+            <button class="letsTalkBtn"> <!-- Button for contact -->
+              <p class="letsTalkBtn-text">Let's Talk!</p> <!-- Button text -->
+              <span class="letsTalkBtn-BG"></span> <!-- Span for button background -->
             </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+          <div class="setting-container" id="setting-container"> <!-- Div for settings container -->
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" /> <!-- Checkbox for settings switch -->
 
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0" aria-label="settings for sound and appearance"></label> <!-- Label for settings switch -->
 
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer"> <!-- Div for visual mode toggle button container -->
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" /> <!-- Checkbox for visual mode switch -->
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label> <!-- Label for visual mode switch -->
             </div>
 
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()"/>
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer"> <!-- Div for sound toggle button container -->
+              <input type="checkbox" id="switchforsound" onclick="playpause()"/> <!-- Checkbox for sound switch -->
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound" class="needtobeinvert"></label> <!-- Label for sound switch -->
             </div>
           </div>
           <!-- setting div ends -->
         </div>
-        <!-- contact-btn-div -->
+        <!-- contact-btn-div ends -->
       </div>
      
 
     </section>
     <!-- landing page ends here -->
     
-    <section class="about-section-container" id="about" data-aos="fade-up">
+    <section class="about-section-container" id="about" data-aos="fade-up"> <!-- Section for the about page, with id "about" and AOS animation -->
       <br />
       <br />
       <br />
-      <div class="about-section">
-        <div class="section-heading">
+      <div class="about-section"> <!-- Div for the about section -->
+        <div class="section-heading"> <!-- Div for section heading -->
           <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            
-            &#60;/AboutMe&#62;
+            &#60;/AboutMe&#62; <!-- About me heading text -->
           </h2>
-          <p class="sectionHeadingP"></p>
+          <p class="sectionHeadingP"></p> <!-- Paragraph for additional heading info -->
         </div>
 
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
+        <div class="info-dp-section"> <!-- Div for info and display picture section -->
+          <div class="about-info"> <!-- Div for about info -->
+            <p tabindex="0"> <!-- Paragraph for about info -->
               Hi! My name is Adil. I'm a web developer and digital visual artist. I love creating things that exist on the internet. My interest in web development started in 2021 when I decided to upload my digital concept arts online.
             </p>
             <br />
-            <p tabindex="0">
+            <p tabindex="0"> <!-- Paragraph for additional about info -->
               Instead of creating an online Concepts Art website, i started
               enjoying web development. Creating custom things for web taught
               me a lot about design & development!
             </p>
             <br />
-            <p tabindex="0">
+            <p tabindex="0"> <!-- Paragraph for additional about info -->
               My main focus these days is building interesting & creative web
               designs, I like to code things from scratch, and enjoy bringing
               ideas to life in the browser.
             </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 740 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
+            <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn" onclick="openURL()"> <!-- Button for opening resume -->
+              <div class="sign"> <!-- Div for sign -->
+                <svg viewBox="0 0 740 512"> <!-- SVG for download icon -->
+                  <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" /> <!-- Path for download icon -->
+                </svg>
+              </div>
 
-        <div class="text">Resume</div>
-      </button>
+              <div class="text">Resume</div> <!-- Div for resume text -->
+            </button>
           </div>
 
-          <div class="dp" data-aos="fade-up">
-            <img src="https://github.com/adilamanmohammed/adilamanmohammed.github.io/blob/main/images/Adil.jpeg?raw=true" alt="Adil Aman Mohammed" tabindex="0" aria-label="image of Adil" />
+          <div class="dp" data-aos="fade-up"> <!-- Div for display picture with AOS animation -->
+            <img src="https://github.com/adilamanmohammed/adilamanmohammed.github.io/blob/main/images/Adil.jpeg?raw=true" alt="Adil Aman Mohammed" tabindex="0" aria-label="image of Adil" /> <!-- Image for display picture -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Education section starts here -->
-<section class="about-section-container" id="education" data-aos="fade-up">
-  <br />
-  <br />
-  <br />
-  <div class="about-section">
-      <div class="section-heading">
+    <section class="about-section-container" id="education" data-aos="fade-up"> <!-- Section for the education page, with id "education" and AOS animation -->
+      <br />
+      <br />
+      <br />
+      <div class="about-section"> <!-- Div for the education section -->
+        <div class="section-heading"> <!-- Div for section heading -->
           <h2 class="section-heading-article" tabindex="0" aria-label="Education heading">
-              &#60;/Education&#62;
+            &#60;/Education&#62; <!-- Education heading text -->
           </h2>
-          <p class="sectionHeadingP"></p>
-      </div>
+          <p class="sectionHeadingP"></p> <!-- Paragraph for additional heading info -->
+        </div>
 
-      <div class="info-dp-section">
-          <div class="about-info education">
-              <h3 class="degree">Master's in Computer and Information Sciences</h3>
-              <p class="university">Oklahoma State University, Stillwater, OK.</p>
-              <p class="description">Specialized in Full stack Development, Machine Learning, Deep Learning, completing courses in Database, Operating Systems II, Data Structures II, and Big Data Analytics.</p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <h3 class="degree">Bachelor's in Technology (B.Tech) in Electrical and Electronics Engineering</h3>
-              <p class="university">Vignan University, Guntur, India.</p>
+        <div class="info-dp-section"> <!-- Div for info and display picture section -->
+          <div class="about-info education"> <!-- Div for education info -->
+            <h3 class="degree">Master's in Computer and Information Sciences</h3> <!-- Heading for master's degree -->
+            <p class="university">Oklahoma State University, Stillwater, OK.</p> <!-- Paragraph for university info -->
+            <p class="description">Specialized in Full stack Development, Machine Learning, Deep Learning, completing courses in Database, Operating Systems II, Data Structures II, and Big Data Analytics.</p> <!-- Paragraph for description of studies -->
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h3 class="degree">Bachelor's in Technology (B.Tech) in Electrical and Electronics Engineering</h3> <!-- Heading for bachelor's degree -->
+            <p class="university">Vignan University, Guntur, India.</p> <!-- Paragraph for university info -->
           </div>  
+        </div>
       </div>
-  </div>
-</section>
-
-
-
-
+    </section>
 
     <!-- about section ends  -->
 
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
+    <section class="skills-section-container" id="skills"> <!-- Section for the skills page, with id "skills" -->
+      <div class="skills-section"> <!-- Div for the skills section -->
+        <div class="section-heading" data-aos="fade-up"> <!-- Div for section heading with AOS animation -->
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
+            &#60;/Skills&#62; <!-- Skills heading text -->
           </h2>
-          <p class="sectionHeadingP"></p>
+          <p class="sectionHeadingP"></p> <!-- Paragraph for additional heading info -->
         </div>
 
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="As a frontend a developer these are the skills i have">
-            Tech Stack
+        <div class="frontend-dev-section"> <!-- Div for frontend developer section -->
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0" aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack <!-- Heading for tech stack -->
           </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-              <span class="tooltip">HTML</span>
+          <ul class="tech-stack-wrapper"> <!-- Unordered list for tech stack items -->
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for HTML skill with AOS animation -->
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" /> <!-- Image for HTML skill -->
+              <span class="tooltip">HTML</span> <!-- Tooltip for HTML skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-              <span class="tooltip">CSS</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for CSS skill with AOS animation -->
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" /> <!-- Image for CSS skill -->
+              <span class="tooltip">CSS</span> <!-- Tooltip for CSS skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for JavaScript skill with AOS animation -->
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" /> <!-- Image for JavaScript skill -->
+              <span class="tooltip">JS</span> <!-- Tooltip for JavaScript skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
-              <span class="tooltip">BOOTSTRAP</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Bootstrap skill with AOS animation -->
+              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" /> <!-- Image for Bootstrap skill -->
+              <span class="tooltip">BOOTSTRAP</span> <!-- Tooltip for Bootstrap skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
-              <span class="tooltip">REACT</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for React skill with AOS animation -->
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" /> <!-- Image for React skill -->
+              <span class="tooltip">REACT</span> <!-- Tooltip for React skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for GitHub skill with AOS animation -->
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" /> <!-- Image for GitHub skill -->
+              <span class="tooltip">GITHUB</span> <!-- Tooltip for GitHub skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Git skill with AOS animation -->
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" /> <!-- Image for Git skill -->
+              <span class="tooltip">GIT</span> <!-- Tooltip for Git skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
-              <span class="tooltip">C</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for C language skill with AOS animation -->
+              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" /> <!-- Image for C language skill -->
+              <span class="tooltip">C</span> <!-- Tooltip for C language skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for C++ skill with AOS animation -->
+              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" /> <!-- Image for C++ language skill -->
+              <span class="tooltip">C++</span> <!-- Tooltip for C++ language skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE PS</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Adobe Photoshop skill with AOS animation -->
+              <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" /> <!-- Image for Adobe Photoshop skill -->
+              <span class="tooltip">ADOBE PS</span> <!-- Tooltip for Adobe Photoshop skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-              <span class="tooltip">FIGMA</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Figma skill with AOS animation -->
+              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" /> <!-- Image for Figma skill -->
+              <span class="tooltip">FIGMA</span> <!-- Tooltip for Figma skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE AI</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Adobe Illustrator skill with AOS animation -->
+              <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" /> <!-- Image for Adobe Illustrator skill -->
+              <span class="tooltip">ADOBE AI</span> <!-- Tooltip for Adobe Illustrator skill -->
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
-              <span class="tooltip">CANVA</span>
+            <li class="tech-stack-box" data-aos="fade-up"> <!-- List item for Canva skill with AOS animation -->
+              <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" /> <!-- Image for Canva skill -->
+              <span class="tooltip">CANVA</span> <!-- Tooltip for Canva skill -->
             </li>
           </ul>
         </div>
@@ -459,74 +447,68 @@
     <!-- skills section ends -->
 
     <!-- Projects section -->
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
+    <section class="projects-section-container" id="projects"> <!-- Section for the projects page, with id "projects" -->
+      <div class="projects-section-div"> <!-- Div for the projects section -->
+        <div class="section-heading" data-aos="fade-up"> <!-- Div for section heading with AOS animation -->
           <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
+            &#60;/Projects&#62; <!-- Projects heading text -->
           </h2>
-          <p class="sectionHeadingP"></p>
+          <p class="sectionHeadingP"></p> <!-- Paragraph for additional heading info -->
         </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-boxes-div"> <!-- Div for project boxes -->
+          <div data-aos="fade-up" class="project-box-wrapper"> <!-- Div for project box with AOS animation -->
 
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/DremscapeOverseas.webp" alt="pexelicon website favicon" class="faviconforDSCProject" />
-                <article class="ProjectHeading">Dream Scape Overseas</article>
-                <p class="ProjectDescription">
+            <div class="project-box project-box2" id="project-box2"> <!-- Div for individual project box -->
+              <div class="info-div"> <!-- Div for project info -->
+                <img src="src/webp/DremscapeOverseas.webp" alt="pexelicon website favicon" class="faviconforDSCProject" /> <!-- Image for project favicon -->
+                <article class="ProjectHeading">Dream Scape Overseas</article> <!-- Article for project heading -->
+                <p class="ProjectDescription"> <!-- Paragraph for project description -->
                   Dream Scape Overseas Consultancy: A webpage to represent the Over seas Consultancy.
                 </p>
-                <div class="project-buttons">
+                <div class="project-buttons"> <!-- Div for project buttons -->
                   <!-- <a href="https://github.com/Pexelicons" target="_blank" class="github-redirect"
                     aria-label="Visit Pexelicons on GitHub">
                     <img src="src/svg/github.svg" alt="github redirect button" />
                   </a> -->
-                  <a href="https://www.dreamscapeoverseas.com" target="_blank" class="cta"
-                    aria-label="Visit Dream Scape Overseas Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
+                  <a href="https://www.dreamscapeoverseas.com" target="_blank" class="cta" aria-label="Visit Dream Scape Overseas Live"> <!-- Anchor link to live project -->
+                    <span>Live view</span> <!-- Span for live view text -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px"> <!-- SVG for arrow icon -->
+                      <path d="M1,5 L11,5"></path> <!-- Path for arrow line -->
+                      <polyline points="8 1 12 5 8 9"></polyline> <!-- Polyline for arrow head -->
                     </svg>
                   </a>
                 </div>
               </div>
-              <div class="image-div">
-                <img src="src/png/DreamscapeOverseas.png" alt="Visit Dream Scape Overseas website preview image" />
+              <div class="image-div"> <!-- Div for project image -->
+                <img src="src/png/DreamscapeOverseas.png" alt="Visit Dream Scape Overseas website preview image" /> <!-- Image for project preview -->
               </div>
             </div>
 
-
-            
-
           </div>
 
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="info-div">
-                <img src="src/png/Varshini_IntroPic.png" alt="Varshini Portfolio website favicon"
-                  class="faviconforProject" />
-                <article class="ProjectHeading">Varshini Teneti Portfolio</article>
-                <p class="ProjectDescription">
+          <div class="project-box-wrapper" data-aos="fade-up"> <!-- Div for another project box with AOS animation -->
+            <div class="project-box project-box5" id="project-box5"> <!-- Div for individual project box -->
+              <div class="info-div"> <!-- Div for project info -->
+                <img src="src/png/Varshini_IntroPic.png" alt="Varshini Portfolio website favicon" class="faviconforProject" /> <!-- Image for project favicon -->
+                <article class="ProjectHeading">Varshini Teneti Portfolio</article> <!-- Article for project heading -->
+                <p class="ProjectDescription"> <!-- Paragraph for project description -->
                   Me and my friend Varshini Teneti developed an online portfolio for her to showcase her work. Tools use are HTML, CSS, and JavaScript.
                 </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/varshiniteneti/VarshiniTeneti" target="_blank" class="github-redirect"
-                    aria-label="Visit Varshini Teneti on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
+                <div class="project-buttons"> <!-- Div for project buttons -->
+                  <a href="https://github.com/varshiniteneti/VarshiniTeneti" target="_blank" class="github-redirect" aria-label="Visit Varshini Teneti on GitHub"> <!-- Anchor link to GitHub project -->
+                    <img src="src/svg/github.svg" alt="github redirect button" /> <!-- Image for GitHub icon -->
                   </a>
-                  <a href="https://varshiniteneti.github.io/VarshiniTeneti/" target="_blank" class="cta" aria-label="Visit Varshini Teneti live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
+                  <a href="https://varshiniteneti.github.io/VarshiniTeneti/" target="_blank" class="cta" aria-label="Visit Varshini Teneti live"> <!-- Anchor link to live project -->
+                    <span>Live view</span> <!-- Span for live view text -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px"> <!-- SVG for arrow icon -->
+                      <path d="M1,5 L11,5"></path> <!-- Path for arrow line -->
+                      <polyline points="8 1 12 5 8 9"></polyline> <!-- Polyline for arrow head -->
                     </svg>
                   </a>
                 </div>
               </div>
-              <div class="image-div">
-                <img src="src/png/Varshini Teneti.png" alt="comickaze website preview image" />
+              <div class="image-div"> <!-- Div for project image -->
+                <img src="src/png/Varshini Teneti.png" alt="comickaze website preview image" /> <!-- Image for project preview -->
               </div>
             </div>
           </div>
@@ -536,86 +518,80 @@
   </main>
   <!-- main ends here -->
 
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+  <footer id="footer"> <!-- Footer section with id "footer" -->
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"> <!-- Button to scroll to top -->
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article> <!-- Article for back to top text -->
     </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
+    <div class="footer-background"> <!-- Div for footer background -->
+      <div class="footer-blob"></div> <!-- Div for footer decorative blob -->
     </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
+    <div class="footer-foreground"> <!-- Div for footer foreground -->
+      <div class="footercontainer"> <!-- Div for footer container -->
+        <div class="two-words"> <!-- Div for footer quote -->
           <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
             "Learning, Living, and Leveling Up."
           </article>
         </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
+        <div class="social-media-container"> <!-- Div for social media container -->
+          <div class="getintouch-heading"> <!-- Div for get in touch heading -->
             <article>GetinTouch();</article>
           </div>
-          <div class="logos">
-            <a href="https://www.instagram.com/mohammed_adil_aman/" target="_blank" tabindex="0"
-              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          <div class="logos"> <!-- Div for social media logos -->
+            <a href="https://www.instagram.com/mohammed_adil_aman/" target="_blank" tabindex="0" aria-label="My instagram">
+              <svg viewBox="0 0 448 512" class="SocialHandle"> <!-- SVG for Instagram icon -->
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
               </svg></a>
 
-            <a href="https://www.linkedin.com/in/mohammedadilaman/" target="_blank"
-              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+            <a href="https://www.linkedin.com/in/mohammedadilaman/" target="_blank" aria-label="My Linkdin">
+              <svg class="SocialHandle" viewBox="0 0 448 512"> <!-- SVG for LinkedIn icon -->
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
               </svg></a>
 
-            <a href="https://github.com/adilamanmohammed" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+            <a href="https://github.com/adilamanmohammed" target="_blank" aria-label="My github">
+              <svg viewBox="0 0 496 512" class="SocialHandle"> <!-- SVG for GitHub icon -->
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
               </svg></a>
 
-            <a href="mailto:adil.mohammed@okstate.edu" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+            <a href="mailto:adil.mohammed@okstate.edu" target="_blank" aria-label="My G mail">
+              <svg id="GmailLogo" viewBox="0 0 512 512" class="SocialHandle"> <!-- SVG for Gmail icon -->
+                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
               </svg></a>
           </div>
         </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-adil.png" alt="animation-head" class="footer-avatar-img" />
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
+        <div class="footer-avatar-container"> <!-- Div for footer avatar container -->
+          <img src="src/png/footer-avatar-adil.png" alt="animation-head" class="footer-avatar-img" /> <!-- Image for footer avatar -->
+          <div class="footer-avatar-face"> <!-- Div for footer avatar face -->
+            <div class="footer-avatar-eye footer-left-eye"> <!-- Div for left eye -->
+              <div class="footer-pupil"></div> <!-- Div for left pupil -->
             </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
+            <div class="footer-avatar-eye footer-right-eye"> <!-- Div for right eye -->
+              <div class="footer-pupil"></div> <!-- Div for right pupil -->
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <article>
+        <div class="footer-bottom"> <!-- Div for footer bottom section -->
+          <article> <!-- Article for footer text -->
             Design & Built by Adil Aman Mohammed
-            <i class="far fa-copyright"></i> twentytwentyfour
+            <i class="far fa-copyright"></i> twentytwentyfour <!-- Copyright icon and year -->
           </article>
         </div>
       </div>
     </div>
-
-    
   </footer>
   <!-- footer ends here -->
 
-  <script src="main.js"></script>
+  <script src="main.js"></script> <!-- Link to external JavaScript file -->
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Link to external AOS JavaScript file -->
   <script>
-    AOS.init();
+    AOS.init(); <!-- Initialize AOS animations -->
   </script>
 
   <script>
     function openURL() {
-      var url = "src/pdf/src/pdf/Adil_Aman_Mohammed_IOS_and_Android_Developer.pdf";
+      var url = "src/pdf/Adil_Resume.pdf";
 
-      window.open(url, "_blank");
+      window.open(url, "_blank"); <!-- Open the resume in a new tab -->
     }
   </script>
 
