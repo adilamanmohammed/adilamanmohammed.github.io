@@ -1,0 +1,229 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- The root element of an HTML document, with the language attribute set to English -->
+
+<head> <!-- The head element contains meta-information about the document -->
+  <!-- Meta tags for character encoding, compatibility, and viewport settings -->
+  <meta charset="UTF-8" /> <!-- Sets the character encoding to UTF-8 to support all characters -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ensures the document is rendered using the latest IE rendering engine -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Controls the viewport's size and scale, making the website responsive on all devices -->
+
+  <!-- Favicon and icons for different platforms -->
+  <link rel="icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- Specifies the icon in the browser tab -->
+  <link rel="apple-touch-icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- Icon for Apple touch devices (iPhones, iPads) -->
+  <link rel="fluid-icon" href="images/Adil_icon.jpeg" title="Adil Aman Mohammed"> <!-- Icon for GitHub's fluid icon feature -->
+  <link rel="shortcut icon" type="image/png" href="images/Adil_icon.jpeg"> <!-- A shortcut icon for the webpage, often used by browsers -->
+
+  <!-- Meta tags for SEO and social media sharing -->
+  <meta name="robots" content="index, follow" /> <!-- Tells search engines to index the page and follow links -->
+  <meta name="theme-color" content="#000" /> <!-- Sets the theme color for the browser's address bar -->
+  <meta name="description" content="Adil Aman Mohammed | Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." /> <!-- A brief description of the webpage content for search engines -->
+  <meta name="keywords" content="Adil Mohammed Aman, Adil Aman Mohammed Portfolio, Adil Aman Mohammed Portfolio, adilamanmohammed, Adil Mohammed Aman Site, Adil Mohammed Aman Site, adilamanmohammed me, adilamanmohammed web, adilamanmohammed github, adilamanmohammed site, adilamanmohammed universe, universe, Adil Mohammed Aman Universe, Adil Mohammed Aman Frontend Developer, Frontend Developer, Adil Mohammed Aman Stillwater, Adil Stillwater" /> <!-- Keywords that describe the content of the webpage for search engines -->
+  <meta name="author" content="Adil Aman Mohammed" /> <!-- Specifies the author of the webpage -->
+  
+  <!-- Open Graph meta tags for social media sharing -->
+  <meta property="og:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" /> <!-- URL of the image that appears when the page is shared on social media -->
+  <meta property="og:title" content="Adil Aman Mohammed | Portfolio" /> <!-- Title of the page when shared on social media -->
+  <meta property="og:description" content="Explore my portfolio to discover more about me and my innovative projects. With a focus on simplicity, clean design, and engaging interactions, I aim to create meaningful experiences." /> <!-- Description of the page when shared on social media -->
+  <meta property="og:url" content="https://adilamanmohammed.github.io" /> <!-- URL of the page when shared on social media -->
+  <meta property="og:site_name" content="Adil Aman Mohammed Portfolio" /> <!-- Name of the site when shared on social media -->
+  
+  <!-- Twitter meta tags for social media sharing -->
+  <meta name="twitter:title" content="Adil Aman Mohammed | Portfolio" /> <!-- Title of the page when shared on Twitter -->
+  <meta name="twitter:image" content="/Users/adilamanmohammed/Documents/adilamanmohammed.github.io/images/Adil.jpeg" /> <!-- URL of the image that appears when the page is shared on Twitter -->
+  <meta name="twitter:url" content="https://adilamanmohammed.github.io" /> <!-- URL of the page when shared on Twitter -->
+
+  <title>Adil Aman Mohammed | Portfolio</title> <!-- The title of the document, which appears in the browser tab -->
+
+  <!-- Stylesheets and fonts -->
+  <link rel="icon" type="image/x-icon" href="images/Adil.icon.jpeg" /> <!-- Specifies a favicon for the website -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Link to an external stylesheet for the Animate On Scroll library -->
+  <link rel="stylesheet" href="style.css" /> <!-- Link to the main stylesheet for the webpage -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" /> <!-- Link to Google Fonts for custom typography -->
+</head>
+
+<body class="body"> <!-- The body element contains the content of the document, with a class "body" for styling -->
+    <!-- Commented out audio tag with autoplay -->
+    <!-- <audio loop autoplay id="audioPlayer" style="display: none">
+      <source src="src/mp3/preloader.mp3" type="audio/mp3 " />
+    </audio> -->
+    
+    <audio loop id="audioPlayer" > <!-- Audio tag to embed sound content, with loop attribute to repeat the audio -->
+      <source src="src/mp3/preloader.mp3" type="audio/mp3" /> <!-- Specifies the audio file and its type -->
+    </audio>
+    
+    <div id="preloader"></div> <!-- A div element with id "preloader" for displaying a loading animation -->
+    <noscript>Allow Javascript</noscript> <!-- Message displayed if JavaScript is disabled in the browser -->
+  
+    <header> <!-- The header element represents the introductory content or navigation links -->
+      <div class="cursor-inner" id="cursor-inner"></div> <!-- Div for custom cursor inner element -->
+      <div class="cursor-outer" id="cursor-outer"></div> <!-- Div for custom cursor outer element -->
+      <div class="visitor-badge-container"> <!-- Div container for visitor badge -->
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=adilamanmohammed" alt="Visitors"> <!-- Visitor badge image -->
+      </div>
+  
+      <div class="navbar" id="navbar"> <!-- Div for navigation bar with id "navbar" -->
+        <div class="hey">Hey!</div> <!-- Div with greeting text -->
+        <div class="logo" tabindex="0" aria-label="Adil Aman Mohammed logo"> <!-- Logo div with tabindex for keyboard navigation and aria-label for accessibility -->
+          <div class="logo-top">
+            <img src="src/png/nav-avatar.png" alt="animation-head" /> <!-- Logo image -->
+          </div>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs"> <!-- Div for navigation tabs -->
+          <ul class="navbar-tabs-ul"> <!-- Unordered list for navigation items -->
+            <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100"> <!-- List item with class and data attributes for AOS animations -->
+              <a href="index.html#home" tabindex="0" aria-label="Home menu button"> <!-- Anchor link to the home section with tabindex and aria-label for accessibility -->
+                &#60;/Home&#62; <!-- Home link text with HTML entity for angle brackets -->
+              </a>
+            </li>
+  
+            <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300"> <!-- List item for about section -->
+              <a href="about.html" aria-label="about menu button"> <!-- Anchor link to the about section -->
+                &#60;/AboutMe&#62; <!-- About me link text -->
+              </a>
+            </li>
+  
+            <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500"> <!-- List item for education section -->
+              <a href="index.html#education" aria-label="Education menu button"> <!-- Anchor link to the education section -->
+                &#60;/Education&#62; <!-- Education link text -->
+              </a>
+            </li>
+  
+            <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500"> <!-- List item for skills section -->
+              <a href="index.html#skills" aria-label="skills menu button"> <!-- Anchor link to the skills section -->
+                &#60;/Skills&#62; <!-- Skills link text -->
+              </a>
+            </li>
+  
+            <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700"> <!-- List item for projects section -->
+              <a href="projects.html" aria-label="projects menu button"> <!-- Anchor link to the projects section -->
+                &#60;/Projects&#62; <!-- Projects link text -->
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </header>
+
+    <main>
+
+
+    </main>
+
+    <footer id="footer"> <!-- Footer section with id "footer" -->
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"> <!-- Button to scroll to top -->
+          <article aria-label="Back to top">&#8592;BACK TO TOP</article> <!-- Article for back to top text -->
+        </button>
+        <div class="footer-background"> <!-- Div for footer background -->
+          <div class="footer-blob"></div> <!-- Div for footer decorative blob -->
+        </div>
+        <div class="footer-foreground"> <!-- Div for footer foreground -->
+          <div class="footercontainer"> <!-- Div for footer container -->
+            <div class="two-words"> <!-- Div for footer quote -->
+              <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+                "Learning, Living, and Leveling Up."
+              </article>
+            </div>
+            <div class="social-media-container"> <!-- Div for social media container -->
+              <div class="getintouch-heading"> <!-- Div for get in touch heading -->
+                <article>GetinTouch();</article>
+              </div>
+              <div class="logos"> <!-- Div for social media logos -->
+                <a href="https://www.instagram.com/mohammed_adil_aman/" target="_blank" tabindex="0" aria-label="My instagram">
+                  <svg viewBox="0 0 448 512" class="SocialHandle"> <!-- SVG for Instagram icon -->
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg></a>
+    
+                <a href="https://www.linkedin.com/in/mohammedadilaman/" target="_blank" aria-label="My Linkdin">
+                  <svg class="SocialHandle" viewBox="0 0 448 512"> <!-- SVG for LinkedIn icon -->
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                  </svg></a>
+    
+                <a href="https://github.com/adilamanmohammed" target="_blank" aria-label="My github">
+                  <svg viewBox="0 0 496 512" class="SocialHandle"> <!-- SVG for GitHub icon -->
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg></a>
+    
+                <a href="mailto:adil.mohammed@okstate.edu" target="_blank" aria-label="My G mail">
+                  <svg id="GmailLogo" viewBox="0 0 512 512" class="SocialHandle"> <!-- SVG for Gmail icon -->
+                    <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                  </svg></a>
+              </div>
+            </div>
+            <div class="footer-avatar-container"> <!-- Div for footer avatar container -->
+              <img src="src/png/footer-avatar-adil.png" alt="animation-head" class="footer-avatar-img" /> <!-- Image for footer avatar -->
+              <div class="footer-avatar-face"> <!-- Div for footer avatar face -->
+                <div class="footer-avatar-eye footer-left-eye"> <!-- Div for left eye -->
+                  <div class="footer-pupil"></div> <!-- Div for left pupil -->
+                </div>
+                <div class="footer-avatar-eye footer-right-eye"> <!-- Div for right eye -->
+                  <div class="footer-pupil"></div> <!-- Div for right pupil -->
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom"> <!-- Div for footer bottom section -->
+              <article> <!-- Article for footer text -->
+                Design & Built by Adil Aman Mohammed
+                <i class="far fa-copyright"></i> twentytwentyfour <!-- Copyright icon and year -->
+              </article>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer ends here -->
+    
+      <script src="main.js"></script> <!-- Link to external JavaScript file -->
+    
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Link to external AOS JavaScript file -->
+      <script>
+        AOS.init(); <!-- Initialize AOS animations -->
+      </script>
+    
+      <script>
+        function openURL() {
+          var url = "src/pdf/Adil_Aman_Mohammed_IOS_and_Android_Developer.pdf";
+    
+          window.open(url, "_blank"); <!-- Open the resume in a new tab -->
+        }
+      </script>
+    
+      <script>
+        const cursorInner = document.getElementById("cursor-inner");
+        const cursorOuter = document.getElementById("cursor-outer");
+        const links = document.querySelectorAll("a,label,button");
+    
+        document.addEventListener("mousemove", function (e) {
+          const posX = e.clientX;
+          const posY = e.clientY;
+    
+          cursorInner.style.left = `${posX}px`;
+          cursorInner.style.top = `${posY}px`;
+    
+          // cursorOuter.style.left = `${posX}px`;
+          // cursorOuter.style.top = `${posY}px`;
+    
+          cursorOuter.animate(
+            {
+              left: `${posX}px`,
+              top: `${posY}px`,
+            },
+            { duration: 500, fill: "forwards" }
+          );
+    
+          links.forEach((link) => {
+            link.addEventListener("mouseenter", () => {
+              cursorInner.classList.add("hover");
+              cursorOuter.classList.add("hover");
+            });
+            link.addEventListener("mouseleave", () => {
+              cursorInner.classList.remove("hover");
+              cursorOuter.classList.remove("hover");
+            });
+          });
+        });
+      </script>
+      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="mohammedadb" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
+    </body>
+    
+    </html>
+    
