@@ -1068,6 +1068,7 @@ noscript {
     display: flex; /* Uses flexbox layout */
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
+    padding-bottom: 20px; /* Sets bottom padding */
 }
 
 /* Language speak and tech stack wrapper styles */
@@ -1853,8 +1854,17 @@ footer {
     #name, #work {
         font-size: 5.5rem; /* Sets font size */
     }
+
+    
+
+
+
     #info-para, .language-name {
-        width: 100%; /* Sets full width */
+        width: 100%; /* Ensures the element takes full width */
+        font-family: Georgia, 'Times New Roman', Times, serif; /* Classic serif fonts */
+        font-size: 1.2rem; /* Adjust the font size as needed */
+        color: #333; /* Adjust the color as needed */
+        line-height: 1.5; /* Adjust the line height for better readability */
     }
     .contact-btn-div {
         height: 140px; /* Sets height */
