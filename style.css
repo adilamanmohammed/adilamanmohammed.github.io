@@ -970,7 +970,8 @@ noscript {
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
     flex-direction: column; /* Aligns items in a column */
-    padding-top: 200px; /* Sets top padding */
+    padding-top: 10px; /* Sets top padding */
+    padding-bottom: 10px;
 }
 
 /* About section, projects, and skills section styles */
@@ -980,6 +981,16 @@ noscript {
     flex-direction: column; /* Aligns items in a column */
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
+    margin-top: 0;  /* Adjust as needed */
+    margin-bottom: 0;  /* Adjust as needed */
+}
+
+/* Specific styles for the education section */
+#education {
+    padding-top: 10px; /* Sets top padding */
+    padding-bottom: 100px; /* Increases bottom padding */
+    margin-top: 0; /* Sets top margin */
+    margin-bottom: 0; /* Sets bottom margin */
 }
 
 /* Heading styles for projects, sections, and skills */
@@ -1863,7 +1874,7 @@ footer {
         width: 100%; /* Ensures the element takes full width */
         font-family: Georgia, 'Times New Roman', Times, serif; /* Classic serif fonts */
         font-size: 1.2rem; /* Adjust the font size as needed */
-        color: #333; /* Adjust the color as needed */
+        color: white; /* Adjust the color as needed */
         line-height: 1.5; /* Adjust the line height for better readability */
     }
 
