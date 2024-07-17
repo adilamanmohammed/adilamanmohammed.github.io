@@ -2072,3 +2072,169 @@ footer {
     width: 100%; /* Sets full width */
     height: auto; /* Sets height to auto */
 }
+
+
+
+/* App Projects section container styles */
+.app-projects-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+  .app-projects-section-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Section heading styles */
+  .section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-heading .section-heading-article {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .section-heading .sectionHeadingP {
+    font-size: 1.2em;
+    color: #555; /* Adjust the color to make it visible */
+    margin: 10px 0 0; /* Adjust the margin for spacing */
+  }
+  
+    /* Horizontal scrolling styles */
+    .horizontal-scroll {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        width: 100%; /* Ensure it takes full width */
+        scrollbar-width: none; /* For Firefox */
+    }
+    
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+    }
+    
+    /* Hide the scroll buttons */
+    .scroll-button {
+        display: none;
+    }
+  
+  
+  
+  .app-project-box {
+    display: inline-block;
+    width: 400px; /* Adjust width as needed */
+    height: 800px; /* Adjust height as needed */
+    margin: 10px;
+    background-color: transparent; /* Ensure background is transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: none; /* Ensure the boxes don't shrink */
+  }
+  
+  .app-project-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain; /* Ensure the image fits within the container without being cropped */
+  }
+  
+  /* Scroll buttons */
+  .scroll-button {
+    display: none; /* Hide the scroll buttons */
+  }
+  
+  
+  .scroll-button.left {
+    left: -50px; /* Adjust to position outside the container */
+  }
+  
+  .scroll-button.right {
+    right: -50px; /* Adjust to position outside the container */
+  }
+
+/* Ensure the container is left-aligned */
+.project-heading-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the project heading and GitHub link */
+    margin-bottom: 20px; /* Add some space below the heading */
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Make sure it takes full width */
+    padding-top: 20px; /* Add some space above the container */
+    padding-bottom: 20px; /* Add some space below the container */
+  }
+  
+  /* Project heading styles */
+  .ProjectHeadingforApp {
+    color: var(--color-white); /* Sets text color */
+    font-size: 3.4rem; /* Sets font size */
+    font-weight: 700; /* Sets font weight */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  /* GitHub redirect styles */
+  .github-redirect img {
+    width: 30px; /* Set the width of the GitHub icon */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Enable positioning adjustments */
+    bottom: -4px; /* Adjust this value to move the image up */
+  }
+  
+
+
+/* Style for the navbar */
+.navbar {
+    overflow: visible; /* Allow the dropdown menu to be fully visible */
+  }
+  
+  /* Style for the dropdown menu */
+  .navbar-tabs-li {
+    position: relative; /* Ensure the navbar list item is positioned relative to allow absolute positioning of the dropdown */
+  }
+  
+  .dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute; /* Position the dropdown menu absolutely */
+    background-color: #333; /* Background color for the dropdown menu */
+    min-width: 140px; /* Minimum width for the dropdown menu */
+    min-height: 80px; /* Increase the minimum height of the dropdown menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow for the dropdown menu */
+    z-index: 1; /* Ensure the dropdown menu appears above other elements */
+    top: 100%; /* Position the dropdown menu below the parent list item */
+    left: 0; /* Align the dropdown menu to the left edge of the parent list item */
+  }
+  
+  .dropdown-menu li {
+    display: inline-block; /* Display list items as block elements */
+    line-height: 1.5; /* Adjust the line height for better spacing */
+  }
+  
+  .dropdown-menu li a {
+    color: white; /* Text color for the links */
+    padding: 12px 16px; /* Adjust the padding for the links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display links as block elements */
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #575757; /* Background color on hover */
+  }
+  
+  /* Show the dropdown menu when the parent list item is hovered */
+  .navbar-tabs-li:hover .dropdown-menu {
+    display: block; /* Display the dropdown menu */
+  }
+  

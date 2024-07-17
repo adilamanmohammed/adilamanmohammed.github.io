@@ -76,11 +76,16 @@
             </a>
           </li>
 
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700"> <!-- List item for projects section -->
-            <a href="projects.html" aria-label="projects menu button"> <!-- Anchor link to the projects section -->
+          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="700"> <!-- List item for projects section -->
+            <span aria-label="projects menu button"> <!-- Span element to hold the text without being a link -->
               &#60;/Projects&#62; <!-- Projects link text -->
-            </a>
+            </span>
+            <ul class="dropdown-menu"> <!-- Nested unordered list for dropdown menu -->
+              <li><a href="Web-projects.html" aria-label="web projects menu button">Web Projects</a></li> <!-- Link to Web Projects page -->
+              <li><a href="App-projects.html" aria-label="app projects menu button">App Projects</a></li> <!-- Link to App Projects page -->
+            </ul>
           </li>
+          
 
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500"> <!-- List item for skills section -->
             <a href="#skills" aria-label="skills menu button"> <!-- Anchor link to the skills section -->
@@ -138,11 +143,14 @@
             &#60;/Skills&#62; <!-- Skills link text -->
           </a>
         </li>
+        
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()"> <!-- List item for projects section in mobile menu -->
           <a href="#projects" tabindex="0" aria-label="projects menu button"> <!-- Anchor link to the projects section -->
             &#60;/Projects&#62; <!-- Projects link text -->
           </a>
         </li>
+
+
       </ul>
     </div>
     <!-- mobile toggle menu ends -->

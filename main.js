@@ -159,3 +159,13 @@ const windowResize = (event) => {
 // Event listeners for mouse move and window resize
 window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
+
+
+function scrollHorizontally(direction) {
+    const scrollContainer = document.getElementById('horizontal-scroll');
+    const scrollAmount = 300; // Adjust the scroll amount as needed
+    scrollContainer.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
