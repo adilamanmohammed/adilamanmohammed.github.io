@@ -106,6 +106,51 @@
 
     <main>
 
+        <!-- hamburger menu for mobile devices -->
+        <div class="hamburger" id="hamburger" data-aos="fade"> <!-- Div for hamburger menu with AOS animation -->
+          <div class="hamburgerbase">
+            <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button"> <!-- Button for hamburger menu with onclick event handler -->
+              <span class="burger-bar" id="burger-bar1"></span> <!-- Span for burger bar -->
+              <span class="burger-bar" id="burger-bar2"></span> <!-- Span for burger bar -->
+              <span class="burger-bar" id="burger-bar3"></span> <!-- Span for burger bar -->
+            </button>
+          </div>
+        </div>
+        <!-- mobile toggle menu -->
+        <div class="mobiletogglemenu" id="mobiletogglemenu"> <!-- Div for mobile toggle menu -->
+          <ul class="mobile-navbar-tabs-ul" id="mobile-ul"> <!-- Unordered list for mobile navigation items -->
+            <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()"> <!-- List item for home section in mobile menu -->
+              <a href="index.html" tabindex="0" aria-label="Home menu button"> <!-- Anchor link to the home section -->
+                &#60;/Home&#62; <!-- Home link text -->
+              </a>
+            </li>
+    
+            <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="700"> <!-- List item for projects section -->
+              <span aria-label="projects menu button"> <!-- Span element to hold the text without being a link -->
+                &#60;/Projects&#62; <!-- Projects link text -->
+              </span>
+              <ul class="dropdown-menu"> <!-- Nested unordered list for dropdown menu -->
+                <li><a href="Web-projects.html" aria-label="web projects menu button">Web Projects</a></li> <!-- Link to Web Projects page -->
+                <li><a href="App-projects.html" aria-label="app projects menu button">App Projects</a></li> <!-- Link to App Projects page -->
+              </ul>
+            </li>
+            
+            <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()"> <!-- List item for skills section in mobile menu -->
+              <a href="index.html#skills" tabindex="0" aria-label="skills menu button"> <!-- Anchor link to the skills section -->
+                &#60;/Skills&#62; <!-- Skills link text -->
+              </a>
+            </li>
+    
+            <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()"> <!-- List item for about section in mobile menu -->
+              <a href="about.html" tabindex="0" aria-label="about menu button"> <!-- Anchor link to the about section -->
+                &#60;/AboutMe&#62; <!-- About me link text -->
+              </a>
+            </li>
+    
+          </ul>
+        </div>
+        <!-- mobile toggle menu ends -->
+
     <!-- App Projects section -->
     <section class="app-projects-section-container" id="app-projects"> <!-- Section for app projects, identified by the id "app-projects" -->
       <div class="app-projects-section-div"> <!-- Container div for the app projects section content -->
